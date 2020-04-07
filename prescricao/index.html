@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
 <title></title>
 <script type="text/javascript" src="inc/prototype.js"></script>
 <script type="text/javascript" src="inc/prototype_extended.js"></script>
@@ -15,9 +15,9 @@
 </head>
 <body onload="$('opEleitoral').checked = false;">
 
-	<h1>Cálculo de Prescrição <br>
-		<span style="font-size: 10pt;font-weight: normal;">Leia o <a href="./manual.pdf" target="_blank">Manual de Instruções</a></span>
-		<br/><span style="font-size: 10pt;font-weight: normal;">Links úteis: <a href='/nscp/doc/Extincao_Punibilidade.htm' target='_blank'>Legislação</a> 
+	<h1>CÃ¡lculo de PrescriÃ§Ã£o <br>
+		<span style="font-size: 10pt;font-weight: normal;">Leia o <a href="./manual.pdf" target="_blank">Manual de InstruÃ§Ãµes</a></span>
+		<br/><span style="font-size: 10pt;font-weight: normal;">Links Ãºteis: <a href='/nscp/doc/Extincao_Punibilidade.htm' target='_blank'>LegislaÃ§Ã£o</a> 
 				&nbsp;<a href='http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2010/Lei/L12234.htm' target='_blank'>Lei 12.234 de 5-mai-2010</a></span>
 		
 		</h1>
@@ -31,7 +31,7 @@
 	</table>
 
 	<div class='divSection'>
-		<div class='section_title' onclick="javascript: $(this).next().toggle();">Marcos interruptivos »</div>		
+		<div class='section_title' onclick="javascript: $(this).next().toggle();">Marcos interruptivos Â»</div>		
 		<div class='divSubSection'>
 			<form id='frmMarcosInterruptivos' action="javascript: void(null);"
 				onsubmit="javascript: void(null);">
@@ -91,15 +91,15 @@
 				</table>
 			</form>
             <form>
-                <p class="panel_title" style="padding: 10px 0px 0px 5px;cursor: auto;">Períodos de Suspensão<p>
+                <p class="panel_title" style="padding: 10px 0px 0px 5px;cursor: auto;">PerÃ­odos de SuspensÃ£o<p>
                 <p>
-                    Início <input type="text" id='txtInicioSuspensao' class='texto datatypeDate'/> 
-                    Término <input type="text" id='txtFimSuspensao' class='texto datatypeDate'/>
+                    InÃ­cio <input type="text" id='txtInicioSuspensao' class='texto datatypeDate'/> 
+                    TÃ©rmino <input type="text" id='txtFimSuspensao' class='texto datatypeDate'/>
                     <input type="button" value="Inserir" onclick="Prescricao.Suspensao.InserirPeriodo();"/>
                 </p>
                 <table class='tblForm' style='width: 60%'>
                     <thead>
-                        <tr><th>Início</th><th>Término</th><th>Tempo</th><th>Próximo marco interruptivo</th><th><a href='javascript:void(null);' title='Remover todos os itens' 
+                        <tr><th>InÃ­cio</th><th>TÃ©rmino</th><th>Tempo</th><th>PrÃ³ximo marco interruptivo</th><th><a href='javascript:void(null);' title='Remover todos os itens' 
 								onclick='Prescricao.Suspensao.RemoverTodos();'>X</a></th></tr>
                     </thead>
                     <tbody id="tbodyPeriodosSuspensao">
@@ -114,9 +114,9 @@
 		</div>
 	</div>
 	<div class='divSection'>
-		<div class='section_title' onclick="javascript: $(this).next().toggle();">Tipificação penal »</div>
+		<div class='section_title' onclick="javascript: $(this).next().toggle();">TipificaÃ§Ã£o penal Â»</div>
 		<div class='divSubSection'>
-			<p>Selecione a tipificação penal na listagem abaixo do formulário, e em seguida clique em Calcular.</p>
+			<p>Selecione a tipificaÃ§Ã£o penal na listagem abaixo do formulÃ¡rio, e em seguida clique em Calcular.</p>
 			<form id='frmInserirPenaCominada' action="javascript: void(null);"
 				onsubmit="Prescricao.PenaCominada.Incluir();return void(null);">
 				<table class='tblForm'>
@@ -124,15 +124,15 @@
 						<tr>
 							<th rowspan="2">Artigo</th>
 							<th colspan="2">Pena (anos)</th>
-							<th colspan="2">Prescrição (anos)</th>
-							<th colspan="2">Benefícios</th>
+							<th colspan="2">PrescriÃ§Ã£o (anos)</th>
+							<th colspan="2">BenefÃ­cios</th>
 							<th rowspan="2">&nbsp;</th>
 						</tr>
 						<tr>
-							<th>mín</th>
-							<th>máx</th>
-							<th>mín</th>
-							<th>máx</th>
+							<th>mÃ­n</th>
+							<th>mÃ¡x</th>
+							<th>mÃ­n</th>
+							<th>mÃ¡x</th>
 							<th>Idade</th>
 							<th>Tentativa</th>
 						</tr>
@@ -168,7 +168,7 @@
 				</table>
 			</form>
 			<p>
-				Links úteis: <a href="inc/Extincao_Punibilidade.htm" target="_blank">Legislação</a> 
+				Links Ãºteis: <a href="inc/Extincao_Punibilidade.htm" target="_blank">LegislaÃ§Ã£o</a> 
 				&nbsp;<a href="http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2010/Lei/L12234.htm" target="_blank">Lei 12.234 de 5-mai-2010</a>
 			</p>
 			
@@ -176,8 +176,8 @@
 				<thead>
 					<tr>
 						<th colspan="2">Pena<br/>(anos)</th>
-						<th colspan="2">Prescrição<br/>(anos)</th>
-						<th colspan="2">Benefícios</th>
+						<th colspan="2">PrescriÃ§Ã£o<br/>(anos)</th>
+						<th colspan="2">BenefÃ­cios</th>
 						<th rowspan="2">Presc.</th>
 						<th rowspan="2">Den&uacute;ncia<br/><span class='spanCominadaDatas' id='spanCominadaDenuncia'></span></th>
 
@@ -191,10 +191,10 @@
 						</th>
 					</tr>
 					<tr>
-						<th>mín</th>
-						<th>máx</th>
-						<th>mín</th>
-						<th>máx</th>
+						<th>mÃ­n</th>
+						<th>mÃ¡x</th>
+						<th>mÃ­n</th>
+						<th>mÃ¡x</th>
 						<th>Idade</th>
 						<th>Tentativa</th>
 					</tr>
@@ -213,7 +213,7 @@
 					<td class="panel_title"
 						onclick="javascript: $$('.trArtigos').invoke('toggle');"
 						title="Exibe/oculta a listagem de Artigos">Listagem de artigos penais
-						[Exibir/Ocultar] »
+						[Exibir/Ocultar] Â»
 					</td>
 				</tr>
 				<tr class="trArtigos"><td style="text-align: right;">
@@ -231,10 +231,10 @@
 		<tbody>
 			<tr class="trFiltro">
 				<td>
-				<p><b>Justiça FEDERAL: total de 343 linhas.</b><br/></p>
+				<p><b>JustiÃ§a FEDERAL: total de 343 linhas.</b><br/></p>
 					<div class="divPautaTitulo" style="text-align: left;"
 						onclick="javascript: $(this).next().toggle();"
-						title="Exibe/oculta as opções de filtro">Filtrar »</div>
+						title="Exibe/oculta as opÃ§Ãµes de filtro">Filtrar Â»</div>
 					<div class="divPautaFiltro"
 						style="text-align: left; display: none;">
 						<div class="tfContainer" id="tfContainer">
@@ -247,7 +247,7 @@
 									class="tfPalavraInteira" value="S" type="checkbox">Somente
 								palavra inteira&nbsp; <input class="tfCaseSensitive"
 									value="S" type="checkbox">Diferenciar
-								maiúsculas/minúsculas
+								maiÃºsculas/minÃºsculas
 							</form>
 						</div>
 
@@ -263,29 +263,29 @@
 						<thead>
 							<tr>
 								<th rowspan="2">Artigo</th>
-								<th rowspan="2">Descrição</th>
+								<th rowspan="2">DescriÃ§Ã£o</th>
 								<th colspan="2">Pena (anos)</th>
-								<th colspan="2">Prescrição (anos)</th>
+								<th colspan="2">PrescriÃ§Ã£o (anos)</th>
 							</tr>
 							<tr>
-								<th>mín</th>
-								<th>máx</th>
-								<th>mín</th>
-								<th>máx</th>
+								<th>mÃ­n</th>
+								<th>mÃ¡x</th>
+								<th>mÃ­n</th>
+								<th>mÃ¡x</th>
 							</tr>
 						</thead>
 						<tbody id="tbodyFilter" class="tbodyFilter">
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 121</td>
-								<td>Homicídio simples</td>
+								<td>HomicÃ­dio simples</td>
 								<td align="right">6</td>
 								<td align="right">20</td>
 								<td align="right">12</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 121, § 2º</td>
-								<td>Homicídio qualificado</td>
+								<td nowrap="nowrap">CP, ART. 121, Â§ 2Âº</td>
+								<td>HomicÃ­dio qualificado</td>
 								<td align="right">12</td>
 								<td align="right">30</td>
 								<td align="right">20</td>
@@ -293,39 +293,39 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 129, CAPUT</td>
-								<td>Lesão corporal leve</td>
+								<td>LesÃ£o corporal leve</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 129, § 1º</td>
-								<td>Lesão corporal grave</td>
+								<td nowrap="nowrap">CP, ART. 129, Â§ 1Âº</td>
+								<td>LesÃ£o corporal grave</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 129, § 2º</td>
-								<td>Lesão corporal gravíssima</td>
+								<td nowrap="nowrap">CP, ART. 129, Â§ 2Âº</td>
+								<td>LesÃ£o corporal gravÃ­ssima</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 129, § 3º</td>
-								<td>Lesão corporal seguida de morte</td>
+								<td nowrap="nowrap">CP, ART. 129, Â§ 3Âº</td>
+								<td>LesÃ£o corporal seguida de morte</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 129, § 4º</td>
-								<td>Lesão corporal culposa</td>
+								<td nowrap="nowrap">CP, ART. 129, Â§ 4Âº</td>
+								<td>LesÃ£o corporal culposa</td>
 								<td align="right">0.17</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -333,7 +333,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 138</td>
-								<td>Calúnia</td>
+								<td>CalÃºnia</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -341,7 +341,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 139</td>
-								<td>Difamação</td>
+								<td>DifamaÃ§Ã£o</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -349,23 +349,23 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 140</td>
-								<td>Injúria</td>
+								<td>InjÃºria</td>
 								<td align="right">0.083</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 140 §2º</td>
-								<td>Se a injúria consiste em violência</td>
+								<td nowrap="nowrap">CP, ART. 140 Â§2Âº</td>
+								<td>Se a injÃºria consiste em violÃªncia</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 140 §3º</td>
-								<td>Injúria por raça, cor, etnia, religião,idoso,deficiente</td>
+								<td nowrap="nowrap">CP, ART. 140 Â§3Âº</td>
+								<td>InjÃºria por raÃ§a, cor, etnia, religiÃ£o,idoso,deficiente</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -381,7 +381,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 147</td>
-								<td>Ameaça</td>
+								<td>AmeaÃ§a</td>
 								<td align="right">0.08</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -396,7 +396,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 148, § 1º</td>
+								<td nowrap="nowrap">CP, ART. 148, Â§ 1Âº</td>
 								<td>Incisos I a V</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
@@ -404,8 +404,8 @@
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 148, § 2º</td>
-								<td>com grave sofrimento físico e moral</td>
+								<td nowrap="nowrap">CP, ART. 148, Â§ 2Âº</td>
+								<td>com grave sofrimento fÃ­sico e moral</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -413,7 +413,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 149</td>
-								<td>Redução a condição análoga de escravo</td>
+								<td>ReduÃ§Ã£o a condiÃ§Ã£o anÃ¡loga de escravo</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -421,7 +421,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 150</td>
-								<td>Entrar ou permanecer clandestinamente ou astuciosamente ou contra a vontade expressa ou tácita.</td>
+								<td>Entrar ou permanecer clandestinamente ou astuciosamente ou contra a vontade expressa ou tÃ¡cita.</td>
 								<td align="right">0.083</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
@@ -429,7 +429,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 151</td>
-								<td>Violação de correspondência</td>
+								<td>ViolaÃ§Ã£o de correspondÃªncia</td>
 								<td align="right">0.083</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -444,7 +444,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 155, § 4º</td>
+								<td nowrap="nowrap">CP, ART. 155, Â§ 4Âº</td>
 								<td>Furto qualificado</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
@@ -460,7 +460,7 @@
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 157, § 2º</td>
+								<td nowrap="nowrap">CP, ART. 157, Â§ 2Âº</td>
 								<td>Roubo</td>
 								<td align="right">5.33</td>
 								<td align="right">15</td>
@@ -468,7 +468,7 @@
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 157, § 3º, 2ª FIGURA</td>
+								<td nowrap="nowrap">CP, ART. 157, Â§ 3Âº, 2Âª FIGURA</td>
 								<td>Roubo seguido de morte</td>
 								<td align="right">20</td>
 								<td align="right">30</td>
@@ -477,7 +477,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 158</td>
-								<td>Extorsão</td>
+								<td>ExtorsÃ£o</td>
 								<td align="right">4</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
@@ -493,15 +493,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 163, III</td>
-								<td>Destruir, Inutilizar ou deteriorar coisa alheia, contra o patrimônio público da União Estados e Municípios</td>
+								<td>Destruir, Inutilizar ou deteriorar coisa alheia, contra o patrimÃ´nio pÃºblico da UniÃ£o Estados e MunicÃ­pios</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 168, §1º</td>
-								<td>Apropriação indébita quando o agente recebeu a coisa</td>
+								<td nowrap="nowrap">CP, ART. 168, Â§1Âº</td>
+								<td>ApropriaÃ§Ã£o indÃ©bita quando o agente recebeu a coisa</td>
 								<td align="right">1.333</td>
 								<td align="right">5.333</td>
 								<td align="right">4</td>
@@ -509,7 +509,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 168-A</td>
-								<td>Apropriação Indébita Previdenciária</td>
+								<td>ApropriaÃ§Ã£o IndÃ©bita PrevidenciÃ¡ria</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -517,22 +517,22 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 171</td>
-								<td>Obter para si ou para outrem vantagem ilícita</td>
+								<td>Obter para si ou para outrem vantagem ilÃ­cita</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 171, § 2º</td>
-								<td>Disposição de coisa alheia como própria</td>
+								<td nowrap="nowrap">CP, ART. 171, Â§ 2Âº</td>
+								<td>DisposiÃ§Ã£o de coisa alheia como prÃ³pria</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 171, § 3º</td>
+								<td nowrap="nowrap">CP, ART. 171, Â§ 3Âº</td>
 								<td>Estelionato qualificado</td>
 								<td align="right">1.33</td>
 								<td align="right">6.67</td>
@@ -541,7 +541,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 172</td>
-								<td>Emitir fatura, duplicata ou nota de venda que não corresponda a mercadoria vendida</td>
+								<td>Emitir fatura, duplicata ou nota de venda que nÃ£o corresponda a mercadoria vendida</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -565,7 +565,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 179</td>
-								<td>Fraude à execução</td>
+								<td>Fraude Ã  execuÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -573,15 +573,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 180</td>
-								<td>Receptação</td>
+								<td>ReceptaÃ§Ã£o</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 180, §6º</td>
-								<td>Receptação de bens públicos</td>
+								<td nowrap="nowrap">CP, ART. 180, Â§6Âº</td>
+								<td>ReceptaÃ§Ã£o de bens pÃºblicos</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -589,7 +589,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 184</td>
-								<td>Violação de direitos autorais</td>
+								<td>ViolaÃ§Ã£o de direitos autorais</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -597,7 +597,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 197, I</td>
-								<td>Constranger alguèm mediante ameaça a exercer arte ou ofício</td>
+								<td>Constranger alguÃ¨m mediante ameaÃ§a a exercer arte ou ofÃ­cio</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -605,7 +605,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 197, II</td>
-								<td>Constranger alguèm a abrir ou fechar estabelecimento</td>
+								<td>Constranger alguÃ¨m a abrir ou fechar estabelecimento</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -621,7 +621,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 199</td>
-								<td>Atentado contra a liberdade de associação</td>
+								<td>Atentado contra a liberdade de associaÃ§Ã£o</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -629,7 +629,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 200</td>
-								<td>Paralisação de trabalho, violência ou perturbação da ordem</td>
+								<td>ParalisaÃ§Ã£o de trabalho, violÃªncia ou perturbaÃ§Ã£o da ordem</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -637,7 +637,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 201</td>
-								<td>Paralisação do Trabalho de interesse coletivo</td>
+								<td>ParalisaÃ§Ã£o do Trabalho de interesse coletivo</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -645,7 +645,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 202</td>
-								<td>Invasão de estabelecimento indl,coml ou agrícola</td>
+								<td>InvasÃ£o de estabelecimento indl,coml ou agrÃ­cola</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -653,7 +653,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 203</td>
-								<td>Frustração direito trabalhista</td>
+								<td>FrustraÃ§Ã£o direito trabalhista</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
@@ -661,7 +661,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 205</td>
-								<td>Trabalho com infração a decisão administrativa</td>
+								<td>Trabalho com infraÃ§Ã£o a decisÃ£o administrativa</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -669,7 +669,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 206</td>
-								<td>Aliciamento para o fim de emigração</td>
+								<td>Aliciamento para o fim de emigraÃ§Ã£o</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -677,7 +677,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 207</td>
-								<td>Aliciamento dentro do território nacional</td>
+								<td>Aliciamento dentro do territÃ³rio nacional</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -685,7 +685,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 231</td>
-								<td>Promover ou facilitar a entrada, no território nacional, de alguém que nela venha exercer exploração sexual</td>
+								<td>Promover ou facilitar a entrada, no territÃ³rio nacional, de alguÃ©m que nela venha exercer exploraÃ§Ã£o sexual</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -693,22 +693,22 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 273</td>
-								<td>Falsificar, corromper, adulterar ou alterar produto destinado a fins terapêuticos ou medicinais</td>
+								<td>Falsificar, corromper, adulterar ou alterar produto destinado a fins terapÃªuticos ou medicinais</td>
 								<td align="right">10</td>
 								<td align="right">15</td>
 								<td align="right">16</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 273, §1º</td>
-								<td>Importar, vender, expor à venda, ou ter em depósito para vender, produto falsificado ou adulterado</td>
+								<td nowrap="nowrap">CP, ART. 273, Â§1Âº</td>
+								<td>Importar, vender, expor Ã  venda, ou ter em depÃ³sito para vender, produto falsificado ou adulterado</td>
 								<td align="right">10</td>
 								<td align="right">15</td>
 								<td align="right">16</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 273, §1º B</td>
+								<td nowrap="nowrap">CP, ART. 273, Â§1Âº B</td>
 								<td>Medicamento sem registro, adulterado etc..</td>
 								<td align="right">10</td>
 								<td align="right">15</td>
@@ -716,8 +716,8 @@
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 273, §2º</td>
-								<td>Falsificar, corromper, adulterar ou alterar produto destinado a fins terapêuticos ou medicinais</td>
+								<td nowrap="nowrap">CP, ART. 273, Â§2Âº</td>
+								<td>Falsificar, corromper, adulterar ou alterar produto destinado a fins terapÃªuticos ou medicinais</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -725,14 +725,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 288</td>
-								<td>Quadrilha ou bando (não armado)</td>
+								<td>Quadrilha ou bando (nÃ£o armado)</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 288, § 1º (ARMADO)</td>
+								<td nowrap="nowrap">CP, ART. 288, Â§ 1Âº (ARMADO)</td>
 								<td>Quadrilha ou bando</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
@@ -740,7 +740,7 @@
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 289, CAPUT OU § 1º</td>
+								<td nowrap="nowrap">CP, ART. 289, CAPUT OU Â§ 1Âº</td>
 								<td>Moeda Falsa</td>
 								<td align="right">3</td>
 								<td align="right">12</td>
@@ -748,16 +748,16 @@
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 289, § 2º</td>
-								<td>Moeda falsa -circulação</td>
+								<td nowrap="nowrap">CP, ART. 289, Â§ 2Âº</td>
+								<td>Moeda falsa -circulaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 289, § 2º</td>
-								<td>Moeda Falsa - restituir à circulação</td>
+								<td nowrap="nowrap">CP, ART. 289, Â§ 2Âº</td>
+								<td>Moeda Falsa - restituir Ã  circulaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -765,7 +765,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 291</td>
-								<td>Fabricar, aquirir., possuir, artefato para falsificação de moeda</td>
+								<td>Fabricar, aquirir., possuir, artefato para falsificaÃ§Ã£o de moeda</td>
 								<td align="right">2</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -773,14 +773,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 293, V</td>
-								<td>Falsificar, fabricando ou alterando, talão, recibo, alvará</td>
+								<td>Falsificar, fabricando ou alterando, talÃ£o, recibo, alvarÃ¡</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 296, §1º, INC. III</td>
+								<td nowrap="nowrap">CP, ART. 296, Â§1Âº, INC. III</td>
 								<td>Altera, falsifica ou faz uso indevido de marcas, logotipos</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
@@ -789,15 +789,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 297</td>
-								<td>Falsificar e/ou alterar documento público verdadeiro</td>
+								<td>Falsificar e/ou alterar documento pÃºblico verdadeiro</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 297 § 1º</td>
-								<td>Se o agente é funcionário público</td>
+								<td nowrap="nowrap">CP, ART. 297 Â§ 1Âº</td>
+								<td>Se o agente Ã© funcionÃ¡rio pÃºblico</td>
 								<td align="right">2.33</td>
 								<td align="right">7</td>
 								<td align="right">8</td>
@@ -813,15 +813,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 299</td>
-								<td>Falsidade Ideológica</td>
+								<td>Falsidade IdeolÃ³gica</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 299 § ÚNICO</td>
-								<td>Se o agente é funcionário público</td>
+								<td nowrap="nowrap">CP, ART. 299 Â§ ÃšNICO</td>
+								<td>Se o agente Ã© funcionÃ¡rio pÃºblico</td>
 								<td align="right">1.17</td>
 								<td align="right">5.83</td>
 								<td align="right">4</td>
@@ -837,15 +837,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 301</td>
-								<td>Certidão ou atestado falso</td>
+								<td>CertidÃ£o ou atestado falso</td>
 								<td align="right">0.17</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 301 §1º</td>
-								<td>falsidade material de atestado e/ou certidão</td>
+								<td nowrap="nowrap">CP, ART. 301 Â§1Âº</td>
+								<td>falsidade material de atestado e/ou certidÃ£o</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -853,7 +853,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 302</td>
-								<td>Falsidade de atestado médico</td>
+								<td>Falsidade de atestado mÃ©dico</td>
 								<td align="right">0.08</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -861,7 +861,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 297</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.297</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.297</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -869,7 +869,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 298</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.298</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.298</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -877,7 +877,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 299</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.299</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.299</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -885,7 +885,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 300</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.300</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.300</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -893,7 +893,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 301</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.301</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.301</td>
 								<td align="right">0.167</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -901,7 +901,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 302</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.302</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.302</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -909,7 +909,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 304 C/C ART. 303</td>
-								<td>Fazer uso de qualquer dos papéis falsificados ou alterados no art.303</td>
+								<td>Fazer uso de qualquer dos papÃ©is falsificados ou alterados no art.303</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -917,7 +917,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 305</td>
-								<td>Supressão de documento</td>
+								<td>SupressÃ£o de documento</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -933,14 +933,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 311, CAPUT</td>
-								<td>Adulterar ou remarcar número do chassi ou identificador</td>
+								<td>Adulterar ou remarcar nÃºmero do chassi ou identificador</td>
 								<td align="right">3</td>
 								<td align="right">6</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 312, CAPUT OU § 1º</td>
+								<td nowrap="nowrap">CP, ART. 312, CAPUT OU Â§ 1Âº</td>
 								<td>Peculato</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
@@ -957,7 +957,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 313 A</td>
-								<td>Inserção de dados falsos sist.informação</td>
+								<td>InserÃ§Ã£o de dados falsos sist.informaÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
 								<td align="right">4</td>
@@ -965,7 +965,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 313 B</td>
-								<td>Alteração de dados sist.informação</td>
+								<td>AlteraÃ§Ã£o de dados sist.informaÃ§Ã£o</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -973,7 +973,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 315</td>
-								<td>Emprego irregular de verbas públicas</td>
+								<td>Emprego irregular de verbas pÃºblicas</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -981,22 +981,22 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 316</td>
-								<td>Concussão</td>
+								<td>ConcussÃ£o</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 316 § 1º</td>
-								<td>Excesso de Exação</td>
+								<td nowrap="nowrap">CP, ART. 316 Â§ 1Âº</td>
+								<td>Excesso de ExaÃ§Ã£o</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 316 § 2º</td>
+								<td nowrap="nowrap">CP, ART. 316 Â§ 2Âº</td>
 								<td>Desvio de verbas</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
@@ -1005,7 +1005,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 317</td>
-								<td>Corrupção Passiva</td>
+								<td>CorrupÃ§Ã£o Passiva</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
 								<td align="right">4</td>
@@ -1013,7 +1013,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 318</td>
-								<td>Facilitação ao contrabando ou descaminho</td>
+								<td>FacilitaÃ§Ã£o ao contrabando ou descaminho</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -1021,7 +1021,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 319</td>
-								<td>Prevaricação</td>
+								<td>PrevaricaÃ§Ã£o</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1036,8 +1036,8 @@
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 321 § ÚNICO</td>
-								<td>Se o interesse for ilegítimo</td>
+								<td nowrap="nowrap">CP, ART. 321 Â§ ÃšNICO</td>
+								<td>Se o interesse for ilegÃ­timo</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1045,7 +1045,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 322</td>
-								<td>Violência arbitrária</td>
+								<td>ViolÃªncia arbitrÃ¡ria</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
@@ -1053,15 +1053,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 325</td>
-								<td>Violação de Sigilo Funcional</td>
+								<td>ViolaÃ§Ã£o de Sigilo Funcional</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 325 §2º</td>
-								<td>Dano a administração pública</td>
+								<td nowrap="nowrap">CP, ART. 325 Â§2Âº</td>
+								<td>Dano a administraÃ§Ã£o pÃºblica</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -1069,7 +1069,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 326</td>
-								<td>Violação ao sigilo da concorrência</td>
+								<td>ViolaÃ§Ã£o ao sigilo da concorrÃªncia</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1077,14 +1077,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 328</td>
-								<td>Usurpação de função pública</td>
+								<td>UsurpaÃ§Ã£o de funÃ§Ã£o pÃºblica</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 328, § ÚNICO</td>
+								<td nowrap="nowrap">CP, ART. 328, Â§ ÃšNICO</td>
 								<td>Com oferecimento de vantagem</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
@@ -1093,15 +1093,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 329</td>
-								<td>Crime de resistência</td>
+								<td>Crime de resistÃªncia</td>
 								<td align="right">0.167</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 329, §1º</td>
-								<td>Se o ato não se executa</td>
+								<td nowrap="nowrap">CP, ART. 329, Â§1Âº</td>
+								<td>Se o ato nÃ£o se executa</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -1109,7 +1109,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 330</td>
-								<td>Desobediência</td>
+								<td>DesobediÃªncia</td>
 								<td align="right">0.04</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -1125,7 +1125,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 332</td>
-								<td>Tráfico de influência</td>
+								<td>TrÃ¡fico de influÃªncia</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -1133,7 +1133,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 333</td>
-								<td>Corrupção Ativa</td>
+								<td>CorrupÃ§Ã£o Ativa</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
 								<td align="right">4</td>
@@ -1148,8 +1148,8 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 335, § ÚNICO</td>
-								<td>Fraude de concorrência</td>
+								<td nowrap="nowrap">CP, ART. 335, Â§ ÃšNICO</td>
+								<td>Fraude de concorrÃªncia</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1157,7 +1157,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 336</td>
-								<td>Inutilização de edital ou sinal</td>
+								<td>InutilizaÃ§Ã£o de edital ou sinal</td>
 								<td align="right">0.08</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1165,7 +1165,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 337</td>
-								<td>Subtrair, ou inutilizar total ou parc. livro oficial, processo ou documento confirmado à custódia de funcionário</td>
+								<td>Subtrair, ou inutilizar total ou parc. livro oficial, processo ou documento confirmado Ã  custÃ³dia de funcionÃ¡rio</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -1173,7 +1173,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 337-A</td>
-								<td>Sonegação Previdenciária</td>
+								<td>SonegaÃ§Ã£o PrevidenciÃ¡ria</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -1181,7 +1181,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 338</td>
-								<td>Reingresso no território nacional de estrangeiro expulso</td>
+								<td>Reingresso no territÃ³rio nacional de estrangeiro expulso</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1189,7 +1189,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 339</td>
-								<td>Denunciação caluniosa</td>
+								<td>DenunciaÃ§Ã£o caluniosa</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -1197,7 +1197,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 342</td>
-								<td>Falso Testemunho - POSTERIOR à Lei 12.850 de 2013</td>
+								<td>Falso Testemunho - POSTERIOR Ã  Lei 12.850 de 2013</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1205,14 +1205,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 342 ANTIGO</td>
-								<td>Falso Testemunho - ANTERIOR à Lei 12.850 de 2013</td>
+								<td>Falso Testemunho - ANTERIOR Ã  Lei 12.850 de 2013</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 342, § 1º</td>
+								<td nowrap="nowrap">CP, ART. 342, Â§ 1Âº</td>
 								<td>Falso Testemunho com causa de aumento de pena</td>
 								<td align="right">1.167</td>
 								<td align="right">4</td>
@@ -1221,7 +1221,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 343</td>
-								<td>Corrupção ativa de testemunha/perito</td>
+								<td>CorrupÃ§Ã£o ativa de testemunha/perito</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
@@ -1229,7 +1229,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 344</td>
-								<td>Coação no curso do processo, usar de violência ou grave ameaça com o fim de favorecer interesse próprio ou alheio</td>
+								<td>CoaÃ§Ã£o no curso do processo, usar de violÃªncia ou grave ameaÃ§a com o fim de favorecer interesse prÃ³prio ou alheio</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1237,7 +1237,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 347</td>
-								<td>Inovar artificiosamente, na pendência de processo civil ou administrativo, o estado de lugar, de coisa ou de pessoa, com o fim de induzir a erro o juiz ou o perito</td>
+								<td>Inovar artificiosamente, na pendÃªncia de processo civil ou administrativo, o estado de lugar, de coisa ou de pessoa, com o fim de induzir a erro o juiz ou o perito</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1252,8 +1252,8 @@
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP, ART. 351, § 3º</td>
-								<td>Promover ou facilitar a fuga de pessoa legalmente presa ou submetida a medida de segurança detentiva</td>
+								<td nowrap="nowrap">CP, ART. 351, Â§ 3Âº</td>
+								<td>Promover ou facilitar a fuga de pessoa legalmente presa ou submetida a medida de seguranÃ§a detentiva</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1261,7 +1261,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 355</td>
-								<td>Patrocínio Infiel</td>
+								<td>PatrocÃ­nio Infiel</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
@@ -1269,7 +1269,7 @@
 							</tr>							
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359</td>
-								<td>Exercer função, atividade, direito, autoridade ou múnus, de que foi suspenso ou privado por decisão judicial</td>
+								<td>Exercer funÃ§Ã£o, atividade, direito, autoridade ou mÃºnus, de que foi suspenso ou privado por decisÃ£o judicial</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1277,7 +1277,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-A</td>
-								<td>Contratação de operação de crédito</td>
+								<td>ContrataÃ§Ã£o de operaÃ§Ã£o de crÃ©dito</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
@@ -1285,7 +1285,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-B</td>
-								<td>Inscrição de despesas não empenhadas em restos a pagar</td>
+								<td>InscriÃ§Ã£o de despesas nÃ£o empenhadas em restos a pagar</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1293,7 +1293,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-C</td>
-								<td>Assunção de obrigação no último ano do mandato ou legislatura</td>
+								<td>AssunÃ§Ã£o de obrigaÃ§Ã£o no Ãºltimo ano do mandato ou legislatura</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1301,7 +1301,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-D</td>
-								<td>Ordenação de despesa não autorizada</td>
+								<td>OrdenaÃ§Ã£o de despesa nÃ£o autorizada</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1309,7 +1309,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-E</td>
-								<td>Prestação de garantia graciosa</td>
+								<td>PrestaÃ§Ã£o de garantia graciosa</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1317,7 +1317,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-F</td>
-								<td>Não cancelamento de restos a pagar</td>
+								<td>NÃ£o cancelamento de restos a pagar</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1325,7 +1325,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-G</td>
-								<td>Aumento de despesa total com pessoal no último ano do mandato ou legislatura</td>
+								<td>Aumento de despesa total com pessoal no Ãºltimo ano do mandato ou legislatura</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1333,7 +1333,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART. 359-H</td>
-								<td>Oferta pública ou colocação de títulos no mercado</td>
+								<td>Oferta pÃºblica ou colocaÃ§Ã£o de tÃ­tulos no mercado</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1341,7 +1341,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, ART.171, CAPUT</td>
-								<td>Obter para si ou para outrem vantagem ilícita</td>
+								<td>Obter para si ou para outrem vantagem ilÃ­cita</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -1349,7 +1349,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP, art. 329</td>
-								<td>Resistência</td>
+								<td>ResistÃªncia</td>
 								<td align="right">0.166</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1357,7 +1357,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP. ART. 204</td>
-								<td>Frustração lei nacionalização do trabalho</td>
+								<td>FrustraÃ§Ã£o lei nacionalizaÃ§Ã£o do trabalho</td>
 								<td align="right">0.083</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1365,15 +1365,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">CP. ART. 293, CAPUT</td>
-								<td>Falsificar papéis públicos</td>
+								<td>Falsificar papÃ©is pÃºblicos</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">CP. ART. 293, §1º</td>
-								<td>Usar, guardar, importar etc. papéis públicos falsos</td>
+								<td nowrap="nowrap">CP. ART. 293, Â§1Âº</td>
+								<td>Usar, guardar, importar etc. papÃ©is pÃºblicos falsos</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -1404,7 +1404,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 1.521/51, ART. 2º, I AO XI</td>
+								<td nowrap="nowrap">LEI 1.521/51, ART. 2Âº, I AO XI</td>
 								<td>CRIME CONTRA A ECONOMIA POPULAR</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -1412,7 +1412,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 1.521/51, ART. 3º, I AO X</td>
+								<td nowrap="nowrap">LEI 1.521/51, ART. 3Âº, I AO X</td>
 								<td>Crime contra a economia popular</td>
 								<td align="right">2</td>
 								<td align="right">10</td>
@@ -1420,7 +1420,7 @@
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 1.521/51, ART. 4º</td>
+								<td nowrap="nowrap">LEI 1.521/51, ART. 4Âº</td>
 								<td>Crime contra a economia popular</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -1428,16 +1428,16 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 1.579/52, ART. 4º</td>
-								<td>Crimes relacionados às Comissões Parlamentares de Inquérito</td>
+								<td nowrap="nowrap">LEI 1.579/52, ART. 4Âº</td>
+								<td>Crimes relacionados Ã s ComissÃµes Parlamentares de InquÃ©rito</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 1.579/52, ART. 4º</td>
-								<td>Crimes relacionados às Comissões Parlamentares de Inquérito</td>
+								<td nowrap="nowrap">LEI 1.579/52, ART. 4Âº</td>
+								<td>Crimes relacionados Ã s ComissÃµes Parlamentares de InquÃ©rito</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -1453,7 +1453,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 101</td>
-								<td>Deixar de cumprir, retardar ou frustrar, sem justo motivo, a execução de ordem judicial expedida nas ações em que for parte ou interveniente o idoso</td>
+								<td>Deixar de cumprir, retardar ou frustrar, sem justo motivo, a execuÃ§Ã£o de ordem judicial expedida nas aÃ§Ãµes em que for parte ou interveniente o idoso</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1461,7 +1461,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 102</td>
-								<td>Apropriar-se de ou desviar bens, proventos, pensão ou qualquer outro rendimento do idoso, dando-lhes aplicação diversa da de sua finalidade</td>
+								<td>Apropriar-se de ou desviar bens, proventos, pensÃ£o ou qualquer outro rendimento do idoso, dando-lhes aplicaÃ§Ã£o diversa da de sua finalidade</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1469,7 +1469,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 103</td>
-								<td>Negar o acolhimento ou a permanência do idoso, como abrigado, por recusa deste em outorgar procuração à entidade de atendimen</td>
+								<td>Negar o acolhimento ou a permanÃªncia do idoso, como abrigado, por recusa deste em outorgar procuraÃ§Ã£o Ã  entidade de atendimen</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1477,7 +1477,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 104</td>
-								<td>Reter o cartão magnético de conta bancária relativa a benefícios, proventos ou pensão do idoso</td>
+								<td>Reter o cartÃ£o magnÃ©tico de conta bancÃ¡ria relativa a benefÃ­cios, proventos ou pensÃ£o do idoso</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1485,7 +1485,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 105</td>
-								<td>Exibir ou veicular, por qualquer meio de comunicação, informações ou imagens depreciativas ou injuriosas à pessoa do idoso</td>
+								<td>Exibir ou veicular, por qualquer meio de comunicaÃ§Ã£o, informaÃ§Ãµes ou imagens depreciativas ou injuriosas Ã  pessoa do idoso</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -1493,7 +1493,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 106</td>
-								<td>Induzir pessoa idosa sem discernimento de seus atos a outorgar procuração para fins de administração de bens ou deles dispor livremente</td>
+								<td>Induzir pessoa idosa sem discernimento de seus atos a outorgar procuraÃ§Ã£o para fins de administraÃ§Ã£o de bens ou deles dispor livremente</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1501,7 +1501,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 107</td>
-								<td>Coagir, de qualquer modo, o idoso a doar, contratar, testar ou outorgar procuração</td>
+								<td>Coagir, de qualquer modo, o idoso a doar, contratar, testar ou outorgar procuraÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -1509,7 +1509,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 108</td>
-								<td>Lavrar ato notarial que envolva pessoa idosa sem discernimento de seus atos, sem a devida representação legal</td>
+								<td>Lavrar ato notarial que envolva pessoa idosa sem discernimento de seus atos, sem a devida representaÃ§Ã£o legal</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1524,7 +1524,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 10.741/03, ART. 96, § 1º</td>
+								<td nowrap="nowrap">LEI 10.741/03, ART. 96, Â§ 1Âº</td>
 								<td>Desdenhar, humilhar, menosprezar ou discriminar pessoa idosa</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
@@ -1533,7 +1533,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 97</td>
-								<td>Deixar de prestar assistência ao idoso</td>
+								<td>Deixar de prestar assistÃªncia ao idoso</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1549,15 +1549,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.741/03, ART. 99</td>
-								<td>Expor a perigo a integridade e a saúde, física ou psíquica, do idoso</td>
+								<td>Expor a perigo a integridade e a saÃºde, fÃ­sica ou psÃ­quica, do idoso</td>
 								<td align="right">0.17</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 10.741/03, ART. 99, § 1º</td>
-								<td>Expor a perigo a integridade e a saúde, física ou psíquica, do idoso que resulta lesão corporal de natureza grave:</td>
+								<td nowrap="nowrap">LEI 10.741/03, ART. 99, Â§ 1Âº</td>
+								<td>Expor a perigo a integridade e a saÃºde, fÃ­sica ou psÃ­quica, do idoso que resulta lesÃ£o corporal de natureza grave:</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1573,7 +1573,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.826/03, ART. 13</td>
-								<td>Omissão de cautela</td>
+								<td>OmissÃ£o de cautela</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
@@ -1605,7 +1605,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.826/03, ART. 17</td>
-								<td>comércio ilegal de arma de fogo</td>
+								<td>comÃ©rcio ilegal de arma de fogo</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -1613,7 +1613,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 10.826/03, ART. 18</td>
-								<td>Tráfico internacional de arma de fogo</td>
+								<td>TrÃ¡fico internacional de arma de fogo</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -1621,31 +1621,31 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06 - ART. 33 CAPUT</td>
-								<td>Tráfico de drogas</td>
+								<td>TrÃ¡fico de drogas</td>
 								<td align="right">5</td>
 								<td align="right">15</td>
 								<td align="right">12</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 11.343/06, ART. 33, § 1º</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td nowrap="nowrap">LEI 11.343/06, ART. 33, Â§ 1Âº</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">5</td>
 								<td align="right">15</td>
 								<td align="right">12</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 11.343/06, ART. 33, § 2º</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td nowrap="nowrap">LEI 11.343/06, ART. 33, Â§ 2Âº</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 11.343/06, ART. 33, § 3º</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td nowrap="nowrap">LEI 11.343/06, ART. 33, Â§ 3Âº</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -1653,7 +1653,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 34</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">3</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
@@ -1661,7 +1661,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 35</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">3</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
@@ -1669,7 +1669,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 36</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">8</td>
 								<td align="right">20</td>
 								<td align="right">12</td>
@@ -1677,7 +1677,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 37</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -1685,7 +1685,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 38</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1693,7 +1693,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 39</td>
-								<td>Tráfico ilícito de substâncias entorpecentes</td>
+								<td>TrÃ¡fico ilÃ­cito de substÃ¢ncias entorpecentes</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
@@ -1701,15 +1701,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 11.343/06, ART. 4. I AO XII</td>
-								<td>Tráfico internacional de substâncias entorpecentes</td>
+								<td>TrÃ¡fico internacional de substÃ¢ncias entorpecentes</td>
 								<td align="right">5</td>
 								<td align="right">15</td>
 								<td align="right">12</td>
 								<td align="right">20</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 2.252/54. ART, 1°</td>
-								<td>corrupção de menores</td>
+								<td nowrap="nowrap">LEI 2.252/54. ART, 1Â°</td>
+								<td>corrupÃ§Ã£o de menores</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -1717,14 +1717,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 4.117/62, ART. 70</td>
-								<td>Rádio não autorizada</td>
+								<td>RÃ¡dio nÃ£o autorizada</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 4.728/65. ART. 71, § 2º</td>
+								<td nowrap="nowrap">LEI 4.728/65. ART. 71, Â§ 2Âº</td>
 								<td>mercado de capitais</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
@@ -1732,7 +1732,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 4.728/65. ART. 73, § 2º</td>
+								<td nowrap="nowrap">LEI 4.728/65. ART. 73, Â§ 2Âº</td>
 								<td>mercado de capitais</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
@@ -1740,7 +1740,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 4.898/65, ART. 3º OU 4º E 6º</td>
+								<td nowrap="nowrap">LEI 4.898/65, ART. 3Âº OU 4Âº E 6Âº</td>
 								<td>Abuso de autoridade</td>
 								<td align="right">0.03</td>
 								<td align="right">0.5</td>
@@ -1749,7 +1749,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 4.947/66, ART. 19</td>
-								<td>Crimes agrários</td>
+								<td>Crimes agrÃ¡rios</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -1757,7 +1757,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 4.947/66, ART. 20</td>
-								<td>Invadir, com intenção de ocupá-las, terras da União, dos Estados e dos Municípios</td>
+								<td>Invadir, com intenÃ§Ã£o de ocupÃ¡-las, terras da UniÃ£o, dos Estados e dos MunicÃ­pios</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
@@ -1788,7 +1788,7 @@
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 16, § ÚNICO</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 16, Â§ ÃšNICO</td>
 								<td>Crimes de imprensa</td>
 								<td align="right">0.08</td>
 								<td align="right">0.25</td>
@@ -1804,7 +1804,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 17, § ÚNICO</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 17, Â§ ÃšNICO</td>
 								<td>Crimes de imprensa</td>
 								<td align="right">0.333</td>
 								<td align="right">1</td>
@@ -1820,7 +1820,7 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 18, § 1º</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 18, Â§ 1Âº</td>
 								<td>Crimes de imprensa</td>
 								<td align="right">4</td>
 								<td align="right">10</td>
@@ -1836,7 +1836,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 19, § 2º</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 19, Â§ 2Âº</td>
 								<td>Crimes de imprensa</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
@@ -1868,7 +1868,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 32, §1º</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 32, Â§1Âº</td>
 								<td>Lei imprensa - direito de resposta</td>
 								<td align="right">Multa</td>
 								<td align="right">Multa</td>
@@ -1876,7 +1876,7 @@
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 5.250/67, ART. 3º</td>
+								<td nowrap="nowrap">LEI 5.250/67, ART. 3Âº</td>
 								<td>Crimes de imprensa</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
@@ -1885,7 +1885,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 5.741/71, ART. 9</td>
-								<td>Esbulho possessório</td>
+								<td>Esbulho possessÃ³rio</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1893,7 +1893,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.001/73, ART. 58, I</td>
-								<td>DOS CRIMES CONTRA OS ÍNDIOS</td>
+								<td>DOS CRIMES CONTRA OS ÃNDIOS</td>
 								<td align="right">0.08</td>
 								<td align="right">0.25</td>
 								<td align="right">2</td>
@@ -1901,7 +1901,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.001/73, ART. 58, II</td>
-								<td>DOS CRIMES CONTRA OS ÍNDIOS</td>
+								<td>DOS CRIMES CONTRA OS ÃNDIOS</td>
 								<td align="right">0.17</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -1909,7 +1909,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.001/73, ART. 58, III</td>
-								<td>DOS CRIMES CONTRA OS ÍNDIOS</td>
+								<td>DOS CRIMES CONTRA OS ÃNDIOS</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -1917,7 +1917,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.368/76 - ART. 12</td>
-								<td>Tráfico e uso indevido de entorpecentes</td>
+								<td>TrÃ¡fico e uso indevido de entorpecentes</td>
 								<td align="right">3</td>
 								<td align="right">15</td>
 								<td align="right">8</td>
@@ -2004,72 +2004,72 @@
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 36º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 36Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">8</td>
 								<td align="right">2</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 37º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 37Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">4</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 37º, § 1º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 37Âº, Â§ 1Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">4</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 37º, § 2º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 37Âº, Â§ 2Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 38º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 38Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 39º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 39Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 40º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 40Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 41º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 41Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 6.538/78, ART. 42º</td>
-								<td>Dos crimes contra o serviço postal e o serviço de telegrama</td>
+								<td nowrap="nowrap">LEI 6.538/78, ART. 42Âº</td>
+								<td>Dos crimes contra o serviÃ§o postal e o serviÃ§o de telegrama</td>
 								<td align="right">Multa</td>
 								<td align="right">0.17</td>
 								<td align="right">2</td>
@@ -2077,7 +2077,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.766/79, ART. 50</td>
-								<td>Crimes contra o oarcelamento do solo urbano e dá outras providências</td>
+								<td>Crimes contra o oarcelamento do solo urbano e dÃ¡ outras providÃªncias</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2085,7 +2085,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.766/79, ART. 52</td>
-								<td>Crimes contra o oarcelamento do solo urbano e dá outras providências</td>
+								<td>Crimes contra o oarcelamento do solo urbano e dÃ¡ outras providÃªncias</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
@@ -2093,7 +2093,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 6.815/80, ART. 125, XIII</td>
-								<td>Fazer declaração falsa em processo de transformação de visto...</td>
+								<td>Fazer declaraÃ§Ã£o falsa em processo de transformaÃ§Ã£o de visto...</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -2101,7 +2101,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.347/85, ART. 10</td>
-								<td>Retardamento ou a omissão de dados técnicos indispensáveis à propositura da ação civil</td>
+								<td>Retardamento ou a omissÃ£o de dados tÃ©cnicos indispensÃ¡veis Ã  propositura da aÃ§Ã£o civil</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2109,7 +2109,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 10</td>
-								<td>Fazer inserir ou omitir elemento falso em documento contábil</td>
+								<td>Fazer inserir ou omitir elemento falso em documento contÃ¡bil</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -2117,7 +2117,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 16</td>
-								<td>Fazer operar, sem autorização instituição financeira</td>
+								<td>Fazer operar, sem autorizaÃ§Ã£o instituiÃ§Ã£o financeira</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2125,7 +2125,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 17</td>
-								<td>Tomar ou receber, empréstimo ou financiamento, controlador ou administrador financeiro</td>
+								<td>Tomar ou receber, emprÃ©stimo ou financiamento, controlador ou administrador financeiro</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -2133,7 +2133,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 18</td>
-								<td>Violar sigilo de operação ou de serviço prestado por instituição financeira ou integrante do sistema de distribuição de títulos mobiliários de que tenha conhecimento, em razão de ofício</td>
+								<td>Violar sigilo de operaÃ§Ã£o ou de serviÃ§o prestado por instituiÃ§Ã£o financeira ou integrante do sistema de distribuiÃ§Ã£o de tÃ­tulos mobiliÃ¡rios de que tenha conhecimento, em razÃ£o de ofÃ­cio</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2141,7 +2141,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 19</td>
-								<td>Obter, mediante fraude, financiamento em instituição de financeira</td>
+								<td>Obter, mediante fraude, financiamento em instituiÃ§Ã£o de financeira</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -2157,7 +2157,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 21</td>
-								<td>Atribuir-se, ou atribuir a terceiro falsa identidade para realização de operação de câmbio</td>
+								<td>Atribuir-se, ou atribuir a terceiro falsa identidade para realizaÃ§Ã£o de operaÃ§Ã£o de cÃ¢mbio</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2165,31 +2165,31 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 22</td>
-								<td>Evasão de divisas</td>
+								<td>EvasÃ£o de divisas</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 7.492/86, ART. 4º, CAPUT</td>
-								<td>Gestão fraudulenta</td>
+								<td nowrap="nowrap">LEI 7.492/86, ART. 4Âº, CAPUT</td>
+								<td>GestÃ£o fraudulenta</td>
 								<td align="right">3</td>
 								<td align="right">12</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 7.492/86, ART. 4º, § ÚNICO</td>
-								<td>Gestão temerária</td>
+								<td nowrap="nowrap">LEI 7.492/86, ART. 4Âº, Â§ ÃšNICO</td>
+								<td>GestÃ£o temerÃ¡ria</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 7.492/86, ART. 5º</td>
-								<td>Apropriar-se de dinheiro, título ou valor bem móvel ou desviá-lo em prov próprio ou alheio, que tenha posse como controlador ou admin de instit financ</td>
+								<td nowrap="nowrap">LEI 7.492/86, ART. 5Âº</td>
+								<td>Apropriar-se de dinheiro, tÃ­tulo ou valor bem mÃ³vel ou desviÃ¡-lo em prov prÃ³prio ou alheio, que tenha posse como controlador ou admin de instit financ</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -2197,15 +2197,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 7.492/86, ART. 6</td>
-								<td>Induzir ou manter em erro sócio, investidor ou repartição pública</td>
+								<td>Induzir ou manter em erro sÃ³cio, investidor ou repartiÃ§Ã£o pÃºblica</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 7.492/86, ART. 7º</td>
-								<td>Emitir, oferecer ou negociar títulos ou valores mobiliários</td>
+								<td nowrap="nowrap">LEI 7.492/86, ART. 7Âº</td>
+								<td>Emitir, oferecer ou negociar tÃ­tulos ou valores mobiliÃ¡rios</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 								<td align="right">4</td>
@@ -2213,15 +2213,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 228</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.069/90, ART. 228, § ÚNICO</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td nowrap="nowrap">LEI 8.069/90, ART. 228, Â§ ÃšNICO</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.17</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
@@ -2229,23 +2229,23 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 229</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.069/90, ART. 229, § ÚNICO</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td nowrap="nowrap">LEI 8.069/90, ART. 229, Â§ ÃšNICO</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.17</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.069/90, ART. 23, § ÚNICO</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td nowrap="nowrap">LEI 8.069/90, ART. 23, Â§ ÃšNICO</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2253,7 +2253,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 230</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2261,7 +2261,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 231</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2269,7 +2269,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 232</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2277,7 +2277,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 234</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2285,7 +2285,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 235</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2293,7 +2293,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 236</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2301,7 +2301,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 237</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2309,7 +2309,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 238</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2317,15 +2317,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 239</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">4</td>
 								<td align="right">6</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.069/90, ART. 239, § ÚNICO</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td nowrap="nowrap">LEI 8.069/90, ART. 239, Â§ ÃšNICO</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">6</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
@@ -2333,7 +2333,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 240</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -2341,7 +2341,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 241</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -2349,7 +2349,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 241-A</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">4</td>
 								<td align="right">6</td>
 								<td align="right">8</td>
@@ -2357,7 +2357,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 241-B</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2365,7 +2365,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 241-C</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2373,7 +2373,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 241-D</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2381,7 +2381,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 242</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.25</td>
 								<td align="right">6</td>
 								<td align="right">2</td>
@@ -2389,7 +2389,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 244</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2397,7 +2397,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 244-A</td>
-								<td>Crimes contra criança e o adolescente</td>
+								<td>Crimes contra crianÃ§a e o adolescente</td>
 								<td align="right">4</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
@@ -2405,7 +2405,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.069/90, ART. 244-B</td>
-								<td>Corromper ou facilitar a corrupção de menor, com ele praticando ou induzindo-o a praticá-la</td>
+								<td>Corromper ou facilitar a corrupÃ§Ã£o de menor, com ele praticando ou induzindo-o a praticÃ¡-la</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2420,16 +2420,16 @@
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.137/90, ART. 1º</td>
-								<td>Crime contra a Ordem Tributária</td>
+								<td nowrap="nowrap">LEI 8.137/90, ART. 1Âº</td>
+								<td>Crime contra a Ordem TributÃ¡ria</td>
 								<td align="right">2</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.137/90, ART. 2º</td>
-								<td>Crime contra a Ordem Tributária</td>
+								<td nowrap="nowrap">LEI 8.137/90, ART. 2Âº</td>
+								<td>Crime contra a Ordem TributÃ¡ria</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2437,7 +2437,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.137/90, ART. 3, II</td>
-								<td>exigir, solicitar ou receber, vantagem indevida, para lançar ou cobrar tributo ou contribuição social</td>
+								<td>exigir, solicitar ou receber, vantagem indevida, para lanÃ§ar ou cobrar tributo ou contribuiÃ§Ã£o social</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -2445,23 +2445,23 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.137/90, ART. 3, III</td>
-								<td>Patrocinar, direta ou indiretamente, interesse privado perante a administração Fazendária</td>
+								<td>Patrocinar, direta ou indiretamente, interesse privado perante a administraÃ§Ã£o FazendÃ¡ria</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.176/91, ART. 1º, I</td>
-								<td>Adulteração de combustíveis</td>
+								<td nowrap="nowrap">LEI 8.176/91, ART. 1Âº, I</td>
+								<td>AdulteraÃ§Ã£o de combustÃ­veis</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.176/91, ART. 2º, § 1º</td>
-								<td>Usurpação de recursos minerais</td>
+								<td nowrap="nowrap">LEI 8.176/91, ART. 2Âº, Â§ 1Âº</td>
+								<td>UsurpaÃ§Ã£o de recursos minerais</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -2469,7 +2469,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.429/92, ART. 19</td>
-								<td>Representação caluniosa por ato de improbidade contra agente público</td>
+								<td>RepresentaÃ§Ã£o caluniosa por ato de improbidade contra agente pÃºblico</td>
 								<td align="right">0.5</td>
 								<td align="right">0.83</td>
 								<td align="right">2</td>
@@ -2477,15 +2477,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 89</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">3</td>
 								<td align="right">5</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 8.666/93, ART. 89, § 1º</td>
-								<td>Crimes da lei de licitação</td>
+								<td nowrap="nowrap">LEI 8.666/93, ART. 89, Â§ 1Âº</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">3</td>
 								<td align="right">5</td>
 								<td align="right">8</td>
@@ -2493,7 +2493,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 90</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2501,7 +2501,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 92</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2509,7 +2509,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 93</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2517,7 +2517,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 94</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2525,7 +2525,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 95</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2533,7 +2533,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 96</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">3</td>
 								<td align="right">6</td>
 								<td align="right">2</td>
@@ -2541,7 +2541,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 97</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2549,7 +2549,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93, ART. 98</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2557,7 +2557,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 8.666/93,ART. 91</td>
-								<td>Crimes da lei de licitação</td>
+								<td>Crimes da lei de licitaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2565,7 +2565,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.279/96, ART. 195, III</td>
-								<td>Crime de concorrência desleal com emprego de meio fraudulento</td>
+								<td>Crime de concorrÃªncia desleal com emprego de meio fraudulento</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2581,39 +2581,39 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 14</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">2</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.434/97, ART. 14, § 1</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td nowrap="nowrap">LEI 9.434/97, ART. 14, Â§ 1</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.434/97, ART. 14, § 2, IV</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td nowrap="nowrap">LEI 9.434/97, ART. 14, Â§ 2, IV</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">3</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.434/97, ART. 14, § 3</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td nowrap="nowrap">LEI 9.434/97, ART. 14, Â§ 3</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">4</td>
 								<td align="right">12</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.434/97, ART. 14, § 4</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td nowrap="nowrap">LEI 9.434/97, ART. 14, Â§ 4</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">8</td>
 								<td align="right">20</td>
 								<td align="right">12</td>
@@ -2621,7 +2621,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 15</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">3</td>
 								<td align="right">8</td>
 								<td align="right">8</td>
@@ -2629,7 +2629,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 16</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">1</td>
 								<td align="right">6</td>
 								<td align="right">4</td>
@@ -2637,7 +2637,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 17</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2645,7 +2645,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 18</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2653,7 +2653,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.434/97, ART. 19</td>
-								<td>Remoção de órgãos, tecidos e partes do corpo humano para fins de transplante</td>
+								<td>RemoÃ§Ã£o de Ã³rgÃ£os, tecidos e partes do corpo humano para fins de transplante</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2668,7 +2668,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.455/97, ART. 1º</td>
+								<td nowrap="nowrap">LEI 9.455/97, ART. 1Âº</td>
 								<td>Crimes de tortura</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
@@ -2676,7 +2676,7 @@
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.455/97, ART. 1º , § 3º</td>
+								<td nowrap="nowrap">LEI 9.455/97, ART. 1Âº , Â§ 3Âº</td>
 								<td>Crimes de tortura</td>
 								<td align="right">4</td>
 								<td align="right">10</td>
@@ -2684,7 +2684,7 @@
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.455/97, ART. 1º, § 1º</td>
+								<td nowrap="nowrap">LEI 9.455/97, ART. 1Âº, Â§ 1Âº</td>
 								<td>Crimes de tortura</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
@@ -2692,7 +2692,7 @@
 								<td align="right">12</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.455/97, ART. 1º, § 2º</td>
+								<td nowrap="nowrap">LEI 9.455/97, ART. 1Âº, Â§ 2Âº</td>
 								<td>Crimes de tortura</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
@@ -2701,7 +2701,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.472/97, ART. 183</td>
-								<td>Rádio Clandestina</td>
+								<td>RÃ¡dio Clandestina</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
@@ -2709,15 +2709,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 302</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.503/97, ART. 302, § ÚNICO</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td nowrap="nowrap">LEI 9.503/97, ART. 302, Â§ ÃšNICO</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2725,15 +2725,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 303</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.503/97, ART. 303, § ÚNICO</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td nowrap="nowrap">LEI 9.503/97, ART. 303, Â§ ÃšNICO</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2741,7 +2741,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 305</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2749,7 +2749,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 306</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2757,15 +2757,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 307</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">3</td>
 								<td align="right">2</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.503/97, ART. 307, § ÚNICO</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td nowrap="nowrap">LEI 9.503/97, ART. 307, Â§ ÃšNICO</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">2</td>
 								<td align="right">2</td>
@@ -2773,7 +2773,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 308</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2781,7 +2781,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 309</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2789,7 +2789,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 310</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2797,7 +2797,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 311</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2805,7 +2805,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.503/97, ART. 312</td>
-								<td>Crime do Código de Trânsito Brasileiro.</td>
+								<td>Crime do CÃ³digo de TrÃ¢nsito Brasileiro.</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2813,7 +2813,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98 - ART. 55</td>
-								<td>Executar pesquisas, lavra ou extração de recursos minerais s/autorização</td>
+								<td>Executar pesquisas, lavra ou extraÃ§Ã£o de recursos minerais s/autorizaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2821,7 +2821,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 31</td>
-								<td>Introduzir espécie exótica sem licença</td>
+								<td>Introduzir espÃ©cie exÃ³tica sem licenÃ§a</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2829,7 +2829,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 34</td>
-								<td>Pesca ilícita</td>
+								<td>Pesca ilÃ­cita</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2845,7 +2845,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 48</td>
-								<td>Impedir ou dificultar a regeneração natural de florestas e as demais formas de vegetação</td>
+								<td>Impedir ou dificultar a regeneraÃ§Ã£o natural de florestas e as demais formas de vegetaÃ§Ã£o</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2853,7 +2853,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 50</td>
-								<td>Danificar florestas, vegetação de dunas</td>
+								<td>Danificar florestas, vegetaÃ§Ã£o de dunas</td>
 								<td align="right">0.25</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2869,15 +2869,15 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 54, CAPUT</td>
-								<td>Poluição</td>
+								<td>PoluiÃ§Ã£o</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.605/98, ART. 54, § 2º</td>
-								<td>Poluição (qualificada)</td>
+								<td nowrap="nowrap">LEI 9.605/98, ART. 54, Â§ 2Âº</td>
+								<td>PoluiÃ§Ã£o (qualificada)</td>
 								<td align="right">1</td>
 								<td align="right">5</td>
 								<td align="right">4</td>
@@ -2885,7 +2885,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 55</td>
-								<td>Explorar recursos minerais sem licença</td>
+								<td>Explorar recursos minerais sem licenÃ§a</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2909,7 +2909,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 64</td>
-								<td>Construir sem autor. em solo não edificável</td>
+								<td>Construir sem autor. em solo nÃ£o edificÃ¡vel</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
 								<td align="right">2</td>
@@ -2917,7 +2917,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 67</td>
-								<td>Conceder licença irregular</td>
+								<td>Conceder licenÃ§a irregular</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2925,7 +2925,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9.605/98, ART. 68</td>
-								<td>Deixar de cumprir obrigação ambiental</td>
+								<td>Deixar de cumprir obrigaÃ§Ã£o ambiental</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2940,7 +2940,7 @@
 								<td align="right">4</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.609/98, ART. 12, §§ 1° E 2º</td>
+								<td nowrap="nowrap">LEI 9.609/98, ART. 12, Â§Â§ 1Â° E 2Âº</td>
 								<td>Crimes contra a propriedade intelectual e programas de computadores (software)</td>
 								<td align="right">1</td>
 								<td align="right">4</td>
@@ -2948,24 +2948,24 @@
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.613/98, ART. 1º, I AO VIII</td>
-								<td>Crimes de lavagem ou ocultação de bens, direitos e valores</td>
+								<td nowrap="nowrap">LEI 9.613/98, ART. 1Âº, I AO VIII</td>
+								<td>Crimes de lavagem ou ocultaÃ§Ã£o de bens, direitos e valores</td>
 								<td align="right">3</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.613/98, ART. 1º, § 1º E § 2º</td>
-								<td>Crimes de lavagem ou ocultação de bens, direitos e valores</td>
+								<td nowrap="nowrap">LEI 9.613/98, ART. 1Âº, Â§ 1Âº E Â§ 2Âº</td>
+								<td>Crimes de lavagem ou ocultaÃ§Ã£o de bens, direitos e valores</td>
 								<td align="right">3</td>
 								<td align="right">10</td>
 								<td align="right">8</td>
 								<td align="right">16</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9.613/98, ART. 1º, § 4º</td>
-								<td>Crimes de lavagem ou ocultação de bens, direitos e valores</td>
+								<td nowrap="nowrap">LEI 9.613/98, ART. 1Âº, Â§ 4Âº</td>
+								<td>Crimes de lavagem ou ocultaÃ§Ã£o de bens, direitos e valores</td>
 								<td align="right">4</td>
 								<td align="right">16.6</td>
 								<td align="right">8</td>
@@ -2973,7 +2973,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9605/98, ART. 38</td>
-								<td>Destruir ou danificar floresta considerada de preservação permanente</td>
+								<td>Destruir ou danificar floresta considerada de preservaÃ§Ã£o permanente</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2981,7 +2981,7 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9605/98, ART. 62, I</td>
-								<td>Destruir, inutilizar ou deteriorar: bem especialmente protegido por lei, ato administrativo ou decisão judicial</td>
+								<td>Destruir, inutilizar ou deteriorar: bem especialmente protegido por lei, ato administrativo ou decisÃ£o judicial</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
@@ -2989,14 +2989,14 @@
 							</tr>
 							<tr class="trLinhaArtigo">
 								<td nowrap="nowrap">LEI 9605/98, ART. 62, II</td>
-								<td>Destruir, inutilizar ou deteriorar: arquivo, registro, museu, biblioteca, pinacoteca, instalação científica ou similar protegido por lei, ato administrativo ou decisão judicial</td>
+								<td>Destruir, inutilizar ou deteriorar: arquivo, registro, museu, biblioteca, pinacoteca, instalaÃ§Ã£o cientÃ­fica ou similar protegido por lei, ato administrativo ou decisÃ£o judicial</td>
 								<td align="right">1</td>
 								<td align="right">3</td>
 								<td align="right">4</td>
 								<td align="right">8</td>
 							</tr>
 							<tr class="trLinhaArtigo">
-								<td nowrap="nowrap">LEI 9605/98, ART. 62, § ÚNICO</td>
+								<td nowrap="nowrap">LEI 9605/98, ART. 62, Â§ ÃšNICO</td>
 								<td>Destruir, inutilizar ou deteriorar: na forma culposa</td>
 								<td align="right">0.5</td>
 								<td align="right">1</td>
@@ -3012,16 +3012,16 @@
 					</div>
 											
 
-<!-- Tabela com a tipificação penal ELEITORAL -->
+<!-- Tabela com a tipificaÃ§Ã£o penal ELEITORAL -->
 <div class="divArtigos" style="display:none;" >						
 	<table class='tblArtigos' style="margin: 0pt; width: 100%; border: medium none;">
 		<tbody>
 			<tr class="trFiltro">
 				<td>
-					<p><b>Justiça ELEITORAL: total de 89 linhas.</b><br></p>
+					<p><b>JustiÃ§a ELEITORAL: total de 89 linhas.</b><br></p>
 					<div class="divPautaTitulo" style="text-align: left;"
 						onclick="javascript: $(this).next().toggle();"
-						title="Exibe/oculta as opções de filtro">Filtrar »</div>
+						title="Exibe/oculta as opÃ§Ãµes de filtro">Filtrar Â»</div>
 					<div class="divPautaFiltro"
 						style="text-align: left; display: none;">
 						<div class="tfContainer" id="tfContainer">
@@ -3034,7 +3034,7 @@
 									class="tfPalavraInteira" value="S" type="checkbox">Somente
 								palavra inteira&nbsp; <input class="tfCaseSensitive"
 									value="S" type="checkbox">Diferenciar
-								maiúsculas/minúsculas
+								maiÃºsculas/minÃºsculas
 							</form>
 						</div>
 	
@@ -3049,17 +3049,17 @@
 						<thead>
 							<tr>
 								<th rowspan="2">Artigo</th>
-								<th rowspan="2">Descrição</th>
+								<th rowspan="2">DescriÃ§Ã£o</th>
 								<th colspan="2">Pena
 									(anos)</th>
-								<th colspan="2">Prescrição
+								<th colspan="2">PrescriÃ§Ã£o
 									(anos)</th>
 							</tr>
 							<tr>
-								<th>mín</th>
-								<th>máx</th>
-								<th>mín</th>
-								<th>máx</th>
+								<th>mÃ­n</th>
+								<th>mÃ¡x</th>
+								<th>mÃ­n</th>
+								<th>mÃ¡x</th>
 							</tr>
 						</thead>
 						<tbody id="tbodyFilterTSE" class="tbodyFilter">
@@ -3068,7 +3068,7 @@
 	
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 289</td>
-									<td>Inscrição Fraudulenta de Eleitor</td>
+									<td>InscriÃ§Ã£o Fraudulenta de Eleitor</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3076,7 +3076,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 290</td>
-									<td>Induzimento à inscrição de eleitor em infração às normas legais</td>
+									<td>Induzimento Ã  inscriÃ§Ã£o de eleitor em infraÃ§Ã£o Ã s normas legais</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
@@ -3084,7 +3084,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 291</td>
-									<td>Inscrição fraudulenta efetivada pelo juiz</td>
+									<td>InscriÃ§Ã£o fraudulenta efetivada pelo juiz</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3092,7 +3092,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 292</td>
-									<td>Negativa ou retardamento de inscrição eleitoral</td>
+									<td>Negativa ou retardamento de inscriÃ§Ã£o eleitoral</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3100,7 +3100,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 293</td>
-									<td>Perturbação ou impedimento do alistamento</td>
+									<td>PerturbaÃ§Ã£o ou impedimento do alistamento</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3108,7 +3108,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 295</td>
-									<td>Retenção de título eleitoral ou do comprovante de alistamento eleitoral</td>
+									<td>RetenÃ§Ã£o de tÃ­tulo eleitoral ou do comprovante de alistamento eleitoral</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3116,7 +3116,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 296</td>
-									<td>Promoção de desordem nos trabalhos eleitorais</td>
+									<td>PromoÃ§Ã£o de desordem nos trabalhos eleitorais</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3124,7 +3124,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 297</td>
-									<td>Impedimento ou embaraço ao exercício do sufrágio
+									<td>Impedimento ou embaraÃ§o ao exercÃ­cio do sufrÃ¡gio
 									</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
@@ -3133,7 +3133,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 298</td>
-									<td>Prisão ou detenção de eleitor, membro de mesa receptora, fiscal, delegado de partido ou candidato, fora das hipóteses legais permitidas</td>
+									<td>PrisÃ£o ou detenÃ§Ã£o de eleitor, membro de mesa receptora, fiscal, delegado de partido ou candidato, fora das hipÃ³teses legais permitidas</td>
 									<td align='right'>1</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
@@ -3141,7 +3141,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 299</td>
-									<td>Corrupção Eleitoral</td>
+									<td>CorrupÃ§Ã£o Eleitoral</td>
 									<td align='right'>1</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
@@ -3149,7 +3149,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 300</td>
-									<td>Coação visando à obtenção de voto ou à abstenção
+									<td>CoaÃ§Ã£o visando Ã  obtenÃ§Ã£o de voto ou Ã  abstenÃ§Ã£o
 									</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
@@ -3158,7 +3158,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 301</td>
-									<td>Violência ou grave ameaça visando a obtenção de voto ou a abstenção</td>
+									<td>ViolÃªncia ou grave ameaÃ§a visando a obtenÃ§Ã£o de voto ou a abstenÃ§Ã£o</td>
 									<td align='right'>1</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
@@ -3166,7 +3166,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 302 E ART. 11, III C/C LEI 6.091/74 ART. 5</td>
-									<td>Concentração de eleitores para embaraçar ou fraudar o exercício do voto e o crime de transporte de eleitores em desacordo com a legislação eleitoral</td>
+									<td>ConcentraÃ§Ã£o de eleitores para embaraÃ§ar ou fraudar o exercÃ­cio do voto e o crime de transporte de eleitores em desacordo com a legislaÃ§Ã£o eleitoral</td>
 									<td align='right'>4</td>
 									<td align='right'>6</td>
 									<td align='right'>8</td>
@@ -3174,7 +3174,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 303</td>
-									<td>Majoração de preços de utilidades e serviços necessários à realização das eleições</td>
+									<td>MajoraÃ§Ã£o de preÃ§os de utilidades e serviÃ§os necessÃ¡rios Ã  realizaÃ§Ã£o das eleiÃ§Ãµes</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3182,7 +3182,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 304</td>
-									<td>Ocultação, sonegação ou recusa de fornecimento de utilidades, alimentos e transporte no dia da eleição</td>
+									<td>OcultaÃ§Ã£o, sonegaÃ§Ã£o ou recusa de fornecimento de utilidades, alimentos e transporte no dia da eleiÃ§Ã£o</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3190,7 +3190,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 305</td>
-									<td>Intervenção indevida de autoridade junto à mesa receptora</td>
+									<td>IntervenÃ§Ã£o indevida de autoridade junto Ã  mesa receptora</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3198,7 +3198,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 306</td>
-									<td>Não observância da ordem de chamamento dos eleitores para votar</td>
+									<td>NÃ£o observÃ¢ncia da ordem de chamamento dos eleitores para votar</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3206,7 +3206,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 307</td>
-									<td>Fornecimento ao eleitor de cédula oficial já assinada ou marcada</td>
+									<td>Fornecimento ao eleitor de cÃ©dula oficial jÃ¡ assinada ou marcada</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3214,7 +3214,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 308</td>
-									<td>Fornecimento de cédula oficial rubricada a destempo</td>
+									<td>Fornecimento de cÃ©dula oficial rubricada a destempo</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3222,7 +3222,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 309</td>
-									<td>Votação múltipla ou realizada em lugar de outrem
+									<td>VotaÃ§Ã£o mÃºltipla ou realizada em lugar de outrem
 									</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
@@ -3231,7 +3231,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 310</td>
-									<td>Práticas irregulares que determinem a anulação da votação</td>
+									<td>PrÃ¡ticas irregulares que determinem a anulaÃ§Ã£o da votaÃ§Ã£o</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3239,7 +3239,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 311</td>
-									<td>Votar o eleitor em seção eleitoral onde não está inscrito ou autorizado a votar</td>
+									<td>Votar o eleitor em seÃ§Ã£o eleitoral onde nÃ£o estÃ¡ inscrito ou autorizado a votar</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.083</td>
 									<td align='right'>2</td>
@@ -3247,7 +3247,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 312</td>
-									<td>Violação do sigilo do voto</td>
+									<td>ViolaÃ§Ã£o do sigilo do voto</td>
 									<td align='right'>0.041</td>
 									<td align='right'>2</td>
 									<td align='right'>2</td>
@@ -3255,7 +3255,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 313</td>
-									<td>Omissão na expedição do boletim de apuração</td>
+									<td>OmissÃ£o na expediÃ§Ã£o do boletim de apuraÃ§Ã£o</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3263,7 +3263,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 314</td>
-									<td>Omissão no recolhimento das cédulas apuradas, no fechamento e lacração da urna</td>
+									<td>OmissÃ£o no recolhimento das cÃ©dulas apuradas, no fechamento e lacraÃ§Ã£o da urna</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3271,7 +3271,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 315</td>
-									<td>Alteração do resultado da votação nos mapas ou boletins de apuração</td>
+									<td>AlteraÃ§Ã£o do resultado da votaÃ§Ã£o nos mapas ou boletins de apuraÃ§Ã£o</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3279,7 +3279,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 316</td>
-									<td>Omissão no recebimento e registro de protestos, bem como de sua remessa à instância superior</td>
+									<td>OmissÃ£o no recebimento e registro de protestos, bem como de sua remessa Ã  instÃ¢ncia superior</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3287,7 +3287,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 317</td>
-									<td>Violação do sigilo da urna ou dos invólucros</td>
+									<td>ViolaÃ§Ã£o do sigilo da urna ou dos invÃ³lucros</td>
 									<td align='right'>3</td>
 									<td align='right'>5</td>
 									<td align='right'>8</td>
@@ -3295,7 +3295,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 318</td>
-									<td>Contagem de votos de eleitores em relação aos quais houve impugnação</td>
+									<td>Contagem de votos de eleitores em relaÃ§Ã£o aos quais houve impugnaÃ§Ã£o</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.083</td>
 									<td align='right'>2</td>
@@ -3303,7 +3303,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 319</td>
-									<td>Subscrição de mais de uma ficha de registro de partido</td>
+									<td>SubscriÃ§Ã£o de mais de uma ficha de registro de partido</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.083</td>
 									<td align='right'>2</td>
@@ -3311,7 +3311,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 320</td>
-									<td>Inscrição simultânea em dois ou mais partidos</td>
+									<td>InscriÃ§Ã£o simultÃ¢nea em dois ou mais partidos</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3327,7 +3327,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 323</td>
-									<td>Divulgação de fatos inverídicos na propaganda eleitoral</td>
+									<td>DivulgaÃ§Ã£o de fatos inverÃ­dicos na propaganda eleitoral</td>
 									<td align='right'>0.083</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3335,7 +3335,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 324</td>
-									<td>Calúnia na propaganda eleitoral</td>
+									<td>CalÃºnia na propaganda eleitoral</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
 									<td align='right'>2</td>
@@ -3343,7 +3343,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 324 + 327</td>
-									<td>Calúnia contra Presidente ou Func. Público</td>
+									<td>CalÃºnia contra Presidente ou Func. PÃºblico</td>
 									<td align='right'>0.65</td>
 									<td align='right'>2,67</td>
 									<td align='right'>2</td>
@@ -3351,7 +3351,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 325</td>
-									<td>Difamação na propaganda eleitoral</td>
+									<td>DifamaÃ§Ã£o na propaganda eleitoral</td>
 									<td align='right'>0.25</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3359,7 +3359,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 325 + 327</td>
-									<td>Difamação contra Presidente ou Func. Público</td>
+									<td>DifamaÃ§Ã£o contra Presidente ou Func. PÃºblico</td>
 									<td align='right'>0.325</td>
 									<td align='right'>1,3</td>
 									<td align='right'>2</td>
@@ -3367,7 +3367,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 326</td>
-									<td>Injúria na propaganda eleitoral</td>
+									<td>InjÃºria na propaganda eleitoral</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3375,15 +3375,15 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 326 + 327</td>
-									<td>Injúria contra Presidente ou Func. Público</td>
+									<td>InjÃºria contra Presidente ou Func. PÃºblico</td>
 									<td align='right'>0.325</td>
 									<td align='right'>1,3</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 326, §2º</td>
-									<td>Injúria Qualificada</td>
+									<td>CE, ART. 326, Â§2Âº</td>
+									<td>InjÃºria Qualificada</td>
 									<td align='right'>0.25</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3391,7 +3391,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 331</td>
-									<td>Inutilização, alteração ou perturbação de propaganda</td>
+									<td>InutilizaÃ§Ã£o, alteraÃ§Ã£o ou perturbaÃ§Ã£o de propaganda</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3399,7 +3399,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 332</td>
-									<td>Impedimento do exercício de propaganda</td>
+									<td>Impedimento do exercÃ­cio de propaganda</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3407,7 +3407,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 334</td>
-									<td>Utilização de organização comercial para propaganda ou aliciamento de eleitores</td>
+									<td>UtilizaÃ§Ã£o de organizaÃ§Ã£o comercial para propaganda ou aliciamento de eleitores</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3415,7 +3415,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 335</td>
-									<td>Realização de propaganda eleitoral em língua estrangeira</td>
+									<td>RealizaÃ§Ã£o de propaganda eleitoral em lÃ­ngua estrangeira</td>
 									<td align='right'>0.25</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3423,7 +3423,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 336</td>
-									<td>Responsabilidade penal dos diretórios locais de partidos políticos pela propaganda delituosa</td>
+									<td>Responsabilidade penal dos diretÃ³rios locais de partidos polÃ­ticos pela propaganda delituosa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3431,7 +3431,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 337</td>
-									<td>Participação de pessoa não detentora de direitos políticos em atividades partidárias e de propaganda eleitoral</td>
+									<td>ParticipaÃ§Ã£o de pessoa nÃ£o detentora de direitos polÃ­ticos em atividades partidÃ¡rias e de propaganda eleitoral</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3439,7 +3439,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 338</td>
-									<td>Não concessão de prioridade postal</td>
+									<td>NÃ£o concessÃ£o de prioridade postal</td>
 									<td align='right'>0.083</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3447,15 +3447,15 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 339</td>
-									<td>Destruição, supressão ou ocultação de urna contendo votos ou documentos eleitorais</td>
+									<td>DestruiÃ§Ã£o, supressÃ£o ou ocultaÃ§Ã£o de urna contendo votos ou documentos eleitorais</td>
 									<td align='right'>2</td>
 									<td align='right'>6</td>
 									<td align='right'>4</td>
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 339, § ÚNICO</td>
-									<td>Agravante no crime de destruição, supressão ou ocultação de urna contendo votos ou documentos eleitorais
+									<td>CE, ART. 339, Â§ ÃšNICO</td>
+									<td>Agravante no crime de destruiÃ§Ã£o, supressÃ£o ou ocultaÃ§Ã£o de urna contendo votos ou documentos eleitorais
 									</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3464,7 +3464,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 340</td>
-									<td>Fabricação, aquisição, fornecimento, subtração ou guarda de materiais de uso exclusivo da Justiça Eleitoral
+									<td>FabricaÃ§Ã£o, aquisiÃ§Ã£o, fornecimento, subtraÃ§Ã£o ou guarda de materiais de uso exclusivo da JustiÃ§a Eleitoral
 									</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
@@ -3473,7 +3473,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 341</td>
-									<td>Retardamento ou não publicação de decisões, citações ou intimações da Justiça Eleitoral</td>
+									<td>Retardamento ou nÃ£o publicaÃ§Ã£o de decisÃµes, citaÃ§Ãµes ou intimaÃ§Ãµes da JustiÃ§a Eleitoral</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.083</td>
 									<td align='right'>2</td>
@@ -3481,7 +3481,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 342</td>
-									<td>Não apresentação de denúncia ou não execução de sentença penal condenatória, no prazo legal</td>
+									<td>NÃ£o apresentaÃ§Ã£o de denÃºncia ou nÃ£o execuÃ§Ã£o de sentenÃ§a penal condenatÃ³ria, no prazo legal</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3489,7 +3489,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 343</td>
-									<td>Não cumprimento, pela autoridade judiciária, do dever de representar contra o órgão do Ministério Público que não oferece denúncia no prazo legal</td>
+									<td>NÃ£o cumprimento, pela autoridade judiciÃ¡ria, do dever de representar contra o Ã³rgÃ£o do MinistÃ©rio PÃºblico que nÃ£o oferece denÃºncia no prazo legal</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3497,7 +3497,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 344</td>
-									<td>Recusa ou abandono do serviço eleitoral</td>
+									<td>Recusa ou abandono do serviÃ§o eleitoral</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.167</td>
 									<td align='right'>2</td>
@@ -3505,7 +3505,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 345</td>
-									<td>Não cumprimento dos deveres impostos pelo Código Eleitoral à autoridade judiciária e aos funcionários da Justiça Eleitoral</td>
+									<td>NÃ£o cumprimento dos deveres impostos pelo CÃ³digo Eleitoral Ã  autoridade judiciÃ¡ria e aos funcionÃ¡rios da JustiÃ§a Eleitoral</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3513,7 +3513,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 346</td>
-									<td>Utilização de prédios ou serviços de repartições públicas para beneficiar partido ou organização de caráter político</td>
+									<td>UtilizaÃ§Ã£o de prÃ©dios ou serviÃ§os de repartiÃ§Ãµes pÃºblicas para beneficiar partido ou organizaÃ§Ã£o de carÃ¡ter polÃ­tico</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3521,7 +3521,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 347</td>
-									<td>Desobediência a ordens ou instruções da Justiça Eleitoral</td>
+									<td>DesobediÃªncia a ordens ou instruÃ§Ãµes da JustiÃ§a Eleitoral</td>
 									<td align='right'>0.25</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3529,7 +3529,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 348</td>
-									<td>Falsificação material de documento público para fins eleitorais</td>
+									<td>FalsificaÃ§Ã£o material de documento pÃºblico para fins eleitorais</td>
 									<td align='right'>2</td>
 									<td align='right'>6</td>
 									<td align='right'>4</td>
@@ -3537,30 +3537,30 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 349</td>
-									<td>Falsificação material de documento particular para fins eleitorais</td>
+									<td>FalsificaÃ§Ã£o material de documento particular para fins eleitorais</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 350, 1ª parte</td>
-									<td>Falsificação ideológica de documento particular</td>
+									<td>CE, ART. 350, 1Âª parte</td>
+									<td>FalsificaÃ§Ã£o ideolÃ³gica de documento particular</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 350, 2ª parte</td>
-									<td>Falsificação ideológica de documento público</td>
+									<td>CE, ART. 350, 2Âª parte</td>
+									<td>FalsificaÃ§Ã£o ideolÃ³gica de documento pÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 352, 1ª parte</td>
+									<td>CE, ART. 352, 1Âª parte</td>
 									<td>Reconhecimento indevido de firma ou letra para fins eleitorais, em documento particular</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
@@ -3568,8 +3568,8 @@
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 352, 2ª parte</td>
-									<td>Reconhecimento indevido de firma ou letra para fins eleitorais, em documento público</td>
+									<td>CE, ART. 352, 2Âª parte</td>
+									<td>Reconhecimento indevido de firma ou letra para fins eleitorais, em documento pÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3592,32 +3592,32 @@
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 353 c/c 350, 1ª</td>
-									<td>Uso de documento falso para fins eleitorais – doc. Privado</td>
+									<td>CE, ART. 353 c/c 350, 1Âª</td>
+									<td>Uso de documento falso para fins eleitorais â€“ doc. Privado</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 353 c/c 350, 2ª</td>
-									<td>Uso de documento falso para fins eleitorais – doc. Público</td>
+									<td>CE, ART. 353 c/c 350, 2Âª</td>
+									<td>Uso de documento falso para fins eleitorais â€“ doc. PÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 353 c/c 352, 1ª</td>
-									<td>Uso de documento falso para fins eleitorais – doc. Privado</td>
+									<td>CE, ART. 353 c/c 352, 1Âª</td>
+									<td>Uso de documento falso para fins eleitorais â€“ doc. Privado</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 353 c/c 352, 2ª</td>
-									<td>Uso de documento falso para fins eleitorais – doc. Público</td>
+									<td>CE, ART. 353 c/c 352, 2Âª</td>
+									<td>Uso de documento falso para fins eleitorais â€“ doc. PÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3625,7 +3625,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 354 c/c 348</td>
-									<td>Obtenção de documento falso para fins eleitorais
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
 									</td>
 									<td align='right'>2</td>
 									<td align='right'>6</td>
@@ -3634,7 +3634,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>CE, ART. 354 c/c 349</td>
-									<td>Obtenção de documento falso para fins eleitorais
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
 									</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
@@ -3642,36 +3642,36 @@
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 354 c/c 350, 1ª</td>
-									<td>Obtenção de documento falso para fins eleitorais
-										– doc. Privado</td>
+									<td>CE, ART. 354 c/c 350, 1Âª</td>
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
+										â€“ doc. Privado</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 354 c/c 350, 2ª</td>
-									<td>Obtenção de documento falso para fins eleitorais
-										– doc. Público</td>
+									<td>CE, ART. 354 c/c 350, 2Âª</td>
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
+										â€“ doc. PÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
 									<td align='right'>12</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 354 c/c 352, 1ª</td>
-									<td>Obtenção de documento falso para fins eleitorais
-										– doc. Privado</td>
+									<td>CE, ART. 354 c/c 352, 1Âª</td>
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
+										â€“ doc. Privado</td>
 									<td align='right'>1</td>
 									<td align='right'>3</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>CE, ART. 354 c/c 352, 2ª</td>
-									<td>Obtenção de documento falso para fins eleitorais
-										– doc. Público</td>
+									<td>CE, ART. 354 c/c 352, 2Âª</td>
+									<td>ObtenÃ§Ã£o de documento falso para fins eleitorais
+										â€“ doc. PÃºblico</td>
 									<td align='right'>1</td>
 									<td align='right'>5</td>
 									<td align='right'>4</td>
@@ -3679,7 +3679,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LC 64/90, ART. 25</td>
-									<td>Argüição de inelegibilidade temerária ou de má-fé
+									<td>ArgÃ¼iÃ§Ã£o de inelegibilidade temerÃ¡ria ou de mÃ¡-fÃ©
 									</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3688,7 +3688,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, I</td>
-									<td>Descumprimento do dever de informação de veículos e embarcações de sua propriedade</td>
+									<td>Descumprimento do dever de informaÃ§Ã£o de veÃ­culos e embarcaÃ§Ãµes de sua propriedade</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
@@ -3696,7 +3696,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, II</td>
-									<td>Descumprimento do art. 2º da Lei 6.091/1974</td>
+									<td>Descumprimento do art. 2Âº da Lei 6.091/1974</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
@@ -3704,7 +3704,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, III</td>
-									<td>Descumprimento dos arts. 5º, 8º e 10º da Lei 6.091/1974</td>
+									<td>Descumprimento dos arts. 5Âº, 8Âº e 10Âº da Lei 6.091/1974</td>
 									<td align='right'>4</td>
 									<td align='right'>6</td>
 									<td align='right'>8</td>
@@ -3712,7 +3712,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, IV</td>
-									<td>Obstar a prestação dos serviços previstos nos arts. 4º e 8º da Lei 6.091/1974</td>
+									<td>Obstar a prestaÃ§Ã£o dos serviÃ§os previstos nos arts. 4Âº e 8Âº da Lei 6.091/1974</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
@@ -3720,7 +3720,7 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, V</td>
-									<td>Utilização de veículos e embarcações públicos nos 90 dias que antecedem o pleito – Réu eleito</td>
+									<td>UtilizaÃ§Ã£o de veÃ­culos e embarcaÃ§Ãµes pÃºblicos nos 90 dias que antecedem o pleito â€“ RÃ©u eleito</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
@@ -3728,30 +3728,30 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 6.091/74, ART. 11, V (senador)</td>
-									<td>Utilização de veículos e embarcações públicos nos 90 dias que antecedem o pleito – Réu eleito para cargo de Senador</td>
+									<td>UtilizaÃ§Ã£o de veÃ­culos e embarcaÃ§Ãµes pÃºblicos nos 90 dias que antecedem o pleito â€“ RÃ©u eleito para cargo de Senador</td>
 									<td align='right'>2,1</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 6.091/74, ART. 11, V, § ÚNICO</td>
-									<td>Pena aplicável ao responsável pela guarda do veículo ou embarcação</td>
+									<td>LEI 6.091/74, ART. 11, V, Â§ ÃšNICO</td>
+									<td>Pena aplicÃ¡vel ao responsÃ¡vel pela guarda do veÃ­culo ou embarcaÃ§Ã£o</td>
 									<td align='right'>0.041</td>
 									<td align='right'>0.5</td>
 									<td align='right'>2</td>
 									<td align='right'>2</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/95, ART. 34, §2º</td>
-									<td>Não acesso dos partidos aos dados aos dados relativos às pesquisas eleitorais</td>
+									<td>LEI 9.504/95, ART. 34, Â§2Âº</td>
+									<td>NÃ£o acesso dos partidos aos dados aos dados relativos Ã s pesquisas eleitorais</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/95, ART. 35, c/c ART. 33, §4º, ART. 34, §2º ou ART. 34, §3º</td>
+									<td>LEI 9.504/95, ART. 35, c/c ART. 33, Â§4Âº, ART. 34, Â§2Âº ou ART. 34, Â§3Âº</td>
 									<td>Irregularidades nos dados publicados em pesquisas eleitorais</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
@@ -3760,47 +3760,47 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 9.504/97, ART. 100-A</td>
-									<td>Descumprimento dos limites de contratação de pessoal previstos na Lei 9.504/97</td>
+									<td>Descumprimento dos limites de contrataÃ§Ã£o de pessoal previstos na Lei 9.504/97</td>
 									<td align='right'>1</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 33, §3º</td>
-									<td>Divulgação irregular de pesquisa</td>
+									<td>LEI 9.504/97, ART. 33, Â§3Âº</td>
+									<td>DivulgaÃ§Ã£o irregular de pesquisa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>Multa</td>
 									<td align='right'>2</td>
 									<td align='right'>2</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 33, §4º</td>
-									<td>Divulgação de pesquisa eleitoral fraudulenta</td>
+									<td>LEI 9.504/97, ART. 33, Â§4Âº</td>
+									<td>DivulgaÃ§Ã£o de pesquisa eleitoral fraudulenta</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 39, §5º, I</td>
-									<td>Uso de alto-falantes e amplificadores de som ou a promoção de comício ou carreata em dia de eleição</td>
+									<td>LEI 9.504/97, ART. 39, Â§5Âº, I</td>
+									<td>Uso de alto-falantes e amplificadores de som ou a promoÃ§Ã£o de comÃ­cio ou carreata em dia de eleiÃ§Ã£o</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 39, §5º, II</td>
-									<td>Arregimentação de eleitor ou a propaganda de boca de urna</td>
+									<td>LEI 9.504/97, ART. 39, Â§5Âº, II</td>
+									<td>ArregimentaÃ§Ã£o de eleitor ou a propaganda de boca de urna</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 39, §5º, III</td>
-									<td>Divulgação de qualquer espécie de propaganda de partidos políticos ou de seus candidatos no dia da eleição</td>
+									<td>LEI 9.504/97, ART. 39, Â§5Âº, III</td>
+									<td>DivulgaÃ§Ã£o de qualquer espÃ©cie de propaganda de partidos polÃ­ticos ou de seus candidatos no dia da eleiÃ§Ã£o</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
@@ -3808,31 +3808,31 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 9.504/97, ART. 40</td>
-									<td>Utilização de símbolos, frases ou imagens de entes públicos na propaganda eleitoral ou que lhe sejam assemelhados</td>
+									<td>UtilizaÃ§Ã£o de sÃ­mbolos, frases ou imagens de entes pÃºblicos na propaganda eleitoral ou que lhe sejam assemelhados</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 57-H, §1º</td>
-									<td>Contratação direta ou indireta de grupo de pessoas com a finalidade específica de emitir mensagens ou comentários na internet para ofender a honra ou denegrir a imagem de candidato, partido ou coligação</td>
+									<td>LEI 9.504/97, ART. 57-H, Â§1Âº</td>
+									<td>ContrataÃ§Ã£o direta ou indireta de grupo de pessoas com a finalidade especÃ­fica de emitir mensagens ou comentÃ¡rios na internet para ofender a honra ou denegrir a imagem de candidato, partido ou coligaÃ§Ã£o</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 									<td align='right'>4</td>
 									<td align='right'>8</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 57-H, §2º</td>
-									<td>Pena aplicável às pessoas contratadas a que se refere o art. 57-H, §1º, da Lei 9.504/97</td>
+									<td>LEI 9.504/97, ART. 57-H, Â§2Âº</td>
+									<td>Pena aplicÃ¡vel Ã s pessoas contratadas a que se refere o art. 57-H, Â§1Âº, da Lei 9.504/97</td>
 									<td align='right'>0.5</td>
 									<td align='right'>1</td>
 									<td align='right'>2</td>
 									<td align='right'>4</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 68, §2º</td>
-									<td>Omissão de entrega do boletim de urna</td>
+									<td>LEI 9.504/97, ART. 68, Â§2Âº</td>
+									<td>OmissÃ£o de entrega do boletim de urna</td>
 									<td align='right'>0.083</td>
 									<td align='right'>0.25</td>
 									<td align='right'>2</td>
@@ -3840,23 +3840,23 @@
 								</tr>
 								<tr class='trLinhaArtigo'>
 									<td>LEI 9.504/97, ART. 72</td>
-									<td>Crimes atingindo o sistema de tratamento automático de dados</td>
+									<td>Crimes atingindo o sistema de tratamento automÃ¡tico de dados</td>
 									<td align='right'>5</td>
 									<td align='right'>10</td>
 									<td align='right'>12</td>
 									<td align='right'>16</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 87, §4º</td>
-									<td>Descumprimento de preceitos referentes à apuração dos votos</td>
+									<td>LEI 9.504/97, ART. 87, Â§4Âº</td>
+									<td>Descumprimento de preceitos referentes Ã  apuraÃ§Ã£o dos votos</td>
 									<td align='right'>0.083</td>
 									<td align='right'>0.25</td>
 									<td align='right'>2</td>
 									<td align='right'>2</td>
 								</tr>
 								<tr class='trLinhaArtigo'>
-									<td>LEI 9.504/97, ART. 91, § ÚNICO</td>
-									<td>Retenção de título eleitoral ou do comprovante de alistamento eleitoral</td>
+									<td>LEI 9.504/97, ART. 91, Â§ ÃšNICO</td>
+									<td>RetenÃ§Ã£o de tÃ­tulo eleitoral ou do comprovante de alistamento eleitoral</td>
 									<td align='right'>0.083</td>
 									<td align='right'>0.25</td>
 									<td align='right'>2</td>
@@ -3885,13 +3885,13 @@
 	
 	
 	<div class='divSection'>
-		<div class='section_title' onclick="javascript: $(this).next().toggle();">Cálculo da pena aplicada »</div>
+		<div class='section_title' onclick="javascript: $(this).next().toggle();">CÃ¡lculo da pena aplicada Â»</div>
 		<div class='divSubSection'>
 			<form id='frmInserirReu'>
-				<p>Informe o nome do réu e o eventual benefício da idade, para preencher um formulário com as condenações e penas.</p>
+				<p>Informe o nome do rÃ©u e o eventual benefÃ­cio da idade, para preencher um formulÃ¡rio com as condenaÃ§Ãµes e penas.</p>
 				<table class='tblForm'>
 				<tr>
-					<th class='label'>Nome do réu</th>
+					<th class='label'>Nome do rÃ©u</th>
 					<th>Benef. Idade</th>
 					<th>&nbsp;</th>
 				</tr>
@@ -3911,8 +3911,8 @@
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<hr>
-	<p><span style="font-size: 10pt;font-weight: normal;">Versão 2.0 em produção desde maio de 2014.
-	<br/>Versão 1.0 em produção desde janeiro de 2013.</span></p>
+	<p><span style="font-size: 10pt;font-weight: normal;">VersÃ£o 2.0 em produÃ§Ã£o desde maio de 2014.
+	<br/>VersÃ£o 1.0 em produÃ§Ã£o desde janeiro de 2013.</span></p>
 	<!-- 
 	<input type="button" value="Inspecionar"
 		onclick="Prescricao.Inspect();" />

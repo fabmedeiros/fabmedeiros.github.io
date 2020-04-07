@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="inc/prototype.js"></script>
+<script type="text/javascript" src="inc/prototype_extended.js"></script>
+<script type="text/javascript">
+	function calc() {
+		var anos = parseFloat($('txtAdicionar').value.replace(',', '.'));
+		
+		var d = $('txtDataInicial').value.toDate();
+		
+		var meses = Math.ceil( anos * 12 );
+		
+		d.add('mo', meses );
+		$('txtResultadoMeses').value = d.formatBR();
+		
+		d = $('txtDataInicial').value.toDate();
+		var dias = anos * 364.25;
+		d.add('d', dias );
+		$('txtResultadoDias').value = d.formatBR();
+		
+	}
+</script>
+</head>
+<body>
+Data inicial: <input type="text" id='txtDataInicial' onblur="$(this).value = $(this).value.toDate().formatBR();" />
+<br/>
+Adicionar (anos): <input type="text" id='txtAdicionar' />
+<br/>
+Resultado somando meses: <input type="text" id='txtResultadoMeses' />
+<br/>
+Resultado somando dias: <input type="text" id='txtResultadoDias' />
+<br/>
+<input type="button" value='Calcular' onclick="calc();">
+
+
+
+</body>
+</html>

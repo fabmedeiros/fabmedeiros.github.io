@@ -1,0 +1,77 @@
+table.tblArtigosTodos, table.tblArtigos {
+	width: 800px;
+}
+div.divArtigos {
+	height: 300px;
+	overflow-y:auto;	
+}
+
+table.tblSorter {
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table.tblSorter thead tr th {
+	border: 1px solid silver;
+	font-size: 8pt;
+	padding: 2px 4px 2px 4px;
+	font-weight: normal;
+	color: black;
+}
+
+table.tblSorter td {
+	color: #3D3D3D;
+	padding: 4px;
+	vertical-align: top;
+	border-bottom: 1px solid silver;
+/*	background-color: white;*/
+}
+
+.trLinhaArtigo td {
+	background-color: white;
+	cursor: pointer;
+	vertical-align: top;
+}
+.trSelected td {
+	background-color: silver;
+	vertical-align: top;
+}
+
+table.tblRelatorio th {
+	border-bottom: 1px solid silver;
+	border-collapse: collapse;
+}
+
+td.Caput{
+	font-weight: bold;
+}
+
+table.tblRelatorio td {
+	background-color: white;
+	border-top: 1px solid silver;
+	text-align:center;
+	vertical-align: middle;
+}
+
+tr.trRelatorio td.Beneficios {
+	text-align:right;
+	font-style: italic;
+}
+
+tr.trRelatorio td.DataPrescricao {
+	font-weight: bold;
+	font-size: 12pt;
+}
+tr.trRelatorio td.Artigo{
+	font-weight: bold;
+	text-align: left;
+}
+
+div.divPautaTitulo, div.divPautaFiltro {
+	margin: 5px;
+	padding: 3px 10px 0px 10px;
+	text-align: right;
+	border-bottom: 1px solid silver;
+	background-color:#F2F0DE;
+	cursor: pointer;
+}

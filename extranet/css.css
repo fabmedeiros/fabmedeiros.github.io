@@ -1,0 +1,49 @@
+
+PRE {font-family:sans-serif;}
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:visited {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #0099FF;
+	text-decoration: none;
+}
+a:active {
+	color: #FF0000;
+	text-decoration: none;
+}
+body,td,th {
+	font-size: 10pt;
+}
+
+p {
+
+    line-height:120%;
+}
+
+html {
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #f8f8ff;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left top, white, #f8f8ff);
+    background: -moz-linear-gradient( to left top, white, #f8f8ff);
+    background: -ms-linear-gradient( to left top, white, #f8f8ff);
+    background: -o-linear-gradient( to left top, white, #f8f8ff);
+    background: linear-gradient( to left top, white, #f8f8ff);
+}
+
+body {
+  background: linear-gradient(to left top, white, #f8f8ff) fixed; font-family:verdana,sans-serif;
+}
+
+.no-bullets {
+    list-style-type: none;
+}

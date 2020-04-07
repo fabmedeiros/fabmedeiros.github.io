@@ -1,0 +1,101 @@
+body {
+	font-family: sans-serif;
+	font-size: 8pt;
+	background-color: #F2F2F2;
+}
+
+div.divSection {
+	margin-top: 20px;	
+	width: 800px;
+}
+
+div.divSubSection {
+	width: 100%;
+}
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table.tblForm {
+	width: 100%;
+}
+table.tblForm td, table.tblForm th {
+	border: 1px solid silver;
+	padding: 2px 2px 2px 2px;
+	text-align: center;
+}
+table.tblForm th, table.tblForm td.label {
+	font-weight: normal;
+	color: black;
+}
+table.tblForm td.texto {
+	text-align: left;
+}
+
+label {
+	cursor: pointer;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #2C5EAF;
+}
+
+input.texto {
+	border: none;
+	background-color: #FFFFCC;
+}
+.inputFormActive { /*	font-weight: bold; */
+	color: gray;
+}
+.inputInvalido {
+	color: red;
+}
+.input100pc {
+	width: 100%;
+}
+.inputNum {
+	text-align: right;
+}
+.datatypeDate {
+	text-align: center;
+}
+input.center {
+	text-align: center;
+}
+
+.panel_title {
+	font-size: 12px;
+	border: none;
+	height: 25px;
+	vertical-align: middle;
+	width: 100%;
+	background-color: white;
+	font-weight: bold;
+	color: #2C5EAF;
+	cursor:pointer;
+}
+
+.section_title {
+	font-size: 16px;
+	padding: 10px 0px 10px 5px;
+	border: none;
+	width: 100%;
+	background-color: white;
+	font-weight: bold;
+	color: #2C5EAF;
+	cursor:pointer;
+}
+
+tr.trReportTop td {
+	padding-top: 6px;
+	padding-bottom: 2px;
+}
+
+tr.trReportBottom td {
+	padding-top: 2px;
+	padding-bottom: 6px;
+}
+
+.prescrito {
+	color: red;
+}
